@@ -1,3 +1,12 @@
+Para que pase los test:
+
+Tener Docker instalado y corriendo.
+
+En cmd: set JDK_JAVA_OPTIONS=--add-opens java.base/java.util.regex=ALL-UNNAMED --add-opens java.base/java.net=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -Djdk.attach.allowAttachSelf=true
+
+o crear una variable de entorno de sistema, "JDK_JAVA_OPTIONS", con el valor: --add-opens java.base/java.util.regex=ALL-UNNAMED --add-opens java.base/java.net=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -Djdk.attach.allowAttachSelf=true.
+
+
 mvn clean install -X -DskipTests
 
 
@@ -139,6 +148,156 @@ Estoy viendo el  ObjectGene, en la parte de
 -que pasa si descomento los tags?
 
 Igual no compilan los tests, con o sin eso, en particular el evomaster-client-java-instrumentation 3.4.1-SNAPSHOT FAILURE [ 11.016 s]
+
+
+
+
+[INFO] evomaster-core-it 3.4.1-SNAPSHOT ................... FAILURE [ 14.763 s]
+
+
+
+mvn install -rf :evomaster-core-graphql-it -X
+
+org.evomaster.core.problem.rest.SamplerVerifierTest.testSamplingFromAllSchemasUnderCoreResources 
+
+ LinksTest>EnterpriseTestBase.initInstrumentation:78 » Runtime 
+
+openjdk 8
+
+
+[INFO] evomaster-e2e-tests-spring-rest-openapi-v2 3.4.1-SNAPSHOT FAILURE [  01:04 h]
+ org.evomaster.e2etests.spring.examples.adaptivehypermutation.AHypermutationAWHTest.testRunMIOAWH
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] EvoMaster 3.4.1-SNAPSHOT ........................... SUCCESS [  0.409 s]
+[INFO] evomaster-dbconstraint 3.4.1-SNAPSHOT .............. SUCCESS [  6.385 s]
+[INFO] evomaster-client-java 3.4.1-SNAPSHOT ............... SUCCESS [  0.407 s]
+[INFO] evomaster-test-utils-java 3.4.1-SNAPSHOT ........... SUCCESS [  2.297 s]
+[INFO] evomaster-test-utils 3.4.1-SNAPSHOT ................ SUCCESS [  0.016 s]
+[INFO] evomaster-test-utils-js 3.4.1-SNAPSHOT ............. SUCCESS [  0.137 s]
+[INFO] evomaster-test-utils-py 3.4.1-SNAPSHOT ............. SUCCESS [  0.115 s]
+[INFO] evomaster-client-java-sql-dto 3.4.1-SNAPSHOT ....... SUCCESS [  0.978 s]
+[INFO] evomaster-client-java-controller-api 3.4.1-SNAPSHOT  SUCCESS [  1.650 s]
+[INFO] evomaster-client-java-instrumentation-shared 3.4.1-SNAPSHOT SUCCESS [  2.177 s]
+[INFO] evomaster-client-java-util 3.4.1-SNAPSHOT .......... SUCCESS [  0.707 s]
+[INFO] evomaster-client-java-distance-heuristics 3.4.1-SNAPSHOT SUCCESS [  1.875 s]
+[INFO] evomaster-client-java-instrumentation 3.4.1-SNAPSHOT SUCCESS [ 18.296 s]
+[INFO] evomaster-ci-utils 3.4.1-SNAPSHOT .................. SUCCESS [  0.174 s]
+[INFO] evomaster-client-java-sql 3.4.1-SNAPSHOT ........... SUCCESS [ 36.507 s]
+[INFO] evomaster-client-java-controller 3.4.1-SNAPSHOT .... SUCCESS [01:48 min]
+[INFO] WFC 0.0.1-SNAPSHOT ................................. SUCCESS [  1.041 s]
+[INFO] solver 3.4.1-SNAPSHOT .............................. SUCCESS [  5.815 s]
+[INFO] evomaster-core 3.4.1-SNAPSHOT ...................... SUCCESS [14:55 min]
+[INFO] evomaster-e2e-tests 3.4.1-SNAPSHOT ................. SUCCESS [  0.018 s]
+[INFO] evomaster-e2e-tests-utils 3.4.1-SNAPSHOT ........... SUCCESS [  1.418 s]
+[INFO] evomaster-core-driver-it 3.4.1-SNAPSHOT ............ SUCCESS [  2.899 s]
+[INFO] evomaster-core-it 3.4.1-SNAPSHOT ................... SUCCESS [03:31 min]
+[INFO] evomaster-core-graphql-it 3.4.1-SNAPSHOT ........... FAILURE [  0.309 s]
+
+
+[INFO] evomaster-e2e-tests-spring-rest-openapi-v2 3.4.1-SNAPSHOT FAILURE [28:59 min]
+
+[ERROR] Failures: 
+[ERROR] org.evomaster.e2etests.spring.examples.adaptivehypermutation.AHypermutationAWHTest.testRunMIOAWH
+[ERROR]   Run 1: AHypermutationAWHTest.testRunMIOAWH:110->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 120000 ms
+[ERROR]   Run 2: AHypermutationAWHTest.testRunMIOAWH:110->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 120000 ms
+[ERROR]   Run 3: AHypermutationAWHTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->lambda$testRunMIOAWH$2:150->RestTestBase.initAndRun:25 Assertion failed
+
+
+[ERROR] Failures: 
+[ERROR]   WmAuth0EMTest.testRunEM:29->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms  
+[ERROR]   WmJsonMapEMTest.testRunEM:29->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms
+[ERROR]   WmOkHttpEMTest.testRunEM:29->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms 
+[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.urlopen.WmUrlOpenEMTest.testRunEM
+[ERROR]   Run 1: WmUrlOpenEMTest.testRunEM:33->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms
+[ERROR]   Run 2: WmUrlOpenEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->testRunEM$lambda$0:45->RestTestBase.initAndRun:25 Assertion failed
+[INFO]
+[ERROR] Errors: 
+[ERROR] org.evomaster.e2etests.spring.openapi.v3.assertions.AssertionEMTest.null
+[ERROR]   Run 1: AssertionEMTest.init:-1 » KillSwitch
+[ERROR]   Run 2: AssertionEMTest.init:-1 » KillSwitch
+[INFO]
+[ERROR]   AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: com.github.fge.jackson.JsonNumEquals.getInstance()Lcom/github/fge/jackson/JsonNumEquals;
+[ERROR]   AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: com.github.fge.jackson.JsonNumEquals.getInstance()Lcom/github/fge/jackson/JsonNumEquals;
+[ERROR]   AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: com.github.fge.jackson.JsonNumEquals.getInstance()Lcom/github/fge/jackson/JsonNumEquals;
+[ERROR]   AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: com.github.fge.jackson.JsonNumEquals.getInstance()Lcom/github/fge/jackson/JsonNumEquals;
+[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.auth0.WmAuth0EMTest.null
+[ERROR]   Run 1: WmAuth0EMTest.init:-1 » KillSwitch
+[ERROR]   Run 2: WmAuth0EMTest.init:-1 » KillSwitch
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.jsonmap.WmJsonMapEMTest.null
+[ERROR]   Run 1: WmJsonMapEMTest.init:-1 » KillSwitch
+[ERROR]   Run 2: WmJsonMapEMTest.init:-1 » KillSwitch
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.okhttp.WmOkHttpEMTest.null
+[ERROR]   Run 1: WmOkHttpEMTest.init:-1 » KillSwitch
+[ERROR]   Run 2: WmOkHttpEMTest.init:-1 » KillSwitch
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.okhttp3.WMHttpsTest.null
+[ERROR]   Run 1: WMHttpsTest.setup:-1 » FatalStartup java.lang.RuntimeException: java.io.IOException: Failed to bind to /127.0.0.12:8080
+[ERROR]   Run 2: WMHttpsTest.setup:-1 » FatalStartup java.lang.RuntimeException: java.io.IOException: Failed to bind to /127.0.0.12:8080
+[ERROR]   Run 3: WMHttpsTest.setup:-1 » FatalStartup java.lang.RuntimeException: java.io.IOException: Failed to bind to /127.0.0.12:8080
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.urlopen.WmUrlOpenEMTest.null
+[ERROR]   Run 1: WmUrlOpenEMTest>EnterpriseTestBase.lambda$tearDown$0:96 expected: <true> but was: <false>
+[ERROR]   Run 2: WmUrlOpenEMTest.init:-1 » KillSwitch
+[INFO]
+[INFO]
+[ERROR] Tests run: 104, Failures: 4, Errors: 10, Skipped: 22
+
+
+
+Cambie la seed del y puse todo como estaba y dio:
+
+[INFO] Reactor Summary for evomaster-core-graphql-it 3.4.1-SNAPSHOT:
+[INFO]
+[INFO] evomaster-core-graphql-it .......................... SUCCESS [  8.331 s]
+[INFO] evomaster-client-java-dependencies ................. SUCCESS [  0.437 s]
+[INFO] evomaster-e2e-tests-dropwizard-examples ............ SUCCESS [  1.841 s]
+[INFO] evomaster-e2e-tests-micronaut-latest ............... SUCCESS [ 22.727 s]
+[INFO] evomaster-e2e-tests-spring-rest-postgres ........... SUCCESS [01:59 min]
+[INFO] evomaster-e2e-tests-spring-rest-openapi-v2 ......... FAILURE [  01:12 h]
+
+
+
+[ERROR] org.evomaster.e2etests.spring.examples.valid.ValidEMTest.testRunEM
+[ERROR]   Run 1: ValidEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->lambda$testRunEM$0:33->RestTestBase.assertHasAtLeastOne:313 Seed 44. Missing 200 POST /api/valid OK
+REST calls:
+200 GET /v2/api-docs , auth=NoAuth
+400 POST /api/valid?EMextraParam123=_EM_229_XYZ_ , auth=NoAuth
+ ==> expected: <true> but was: <false>
+[ERROR]   Run 2: ValidEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->lambda$testRunEM$0:33->RestTestBase.assertHasAtLeastOne:313 Seed 44. Missing 200 POST /api/valid OK
+REST calls:
+200 GET /v2/api-docs , auth=NoAuth
+400 POST /api/valid?EMextraParam123=_EM_229_XYZ_ , auth=NoAuth
+ ==> expected: <true> but was: <false>
+[ERROR]   Run 3: ValidEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->lambda$testRunEM$0:33->RestTestBase.assertHasAtLeastOne:313 Seed 44. Missing 200 POST /api/valid OK
+REST calls:
+200 GET /v2/api-docs , auth=NoAuth
+400 POST /api/valid?EMextraParam123=_EM_229_XYZ_ , auth=NoAuth
+ ==> expected: <true> but was: <false>
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.examples.wiremock.service.ExternalServiceMockingEMTest.externalServiceSuccessTest
+[ERROR]   Run 1: ExternalServiceMockingEMTest.externalServiceSuccessTest:57 expected: <1.0> but was: <0.0>
+[ERROR]   Run 2: ExternalServiceMockingEMTest.externalServiceSuccessTest:57 expected: <1.0> but was: <0.0>
+[ERROR]   Run 3: ExternalServiceMockingEMTest.externalServiceSuccessTest:57 expected: <1.0> but was: <0.0>
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.examples.wiremock.service.ExternalServiceMockingFlakyEMTest.externalServiceMockingTest
+[ERROR]   Run 1: ExternalServiceMockingFlakyEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->lambda$externalServiceMockingTest$0:54 expected: <true> but was: <false>
+[ERROR]   Run 2: ExternalServiceMockingFlakyEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->lambda$externalServiceMockingTest$0:54 expected: <true> but was: <false>
+[ERROR]   Run 3: ExternalServiceMockingFlakyEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->lambda$externalServiceMockingTest$0:54 expected: <true> but was: <false>
+[INFO]
+[ERROR] Errors: 
+[ERROR] org.evomaster.e2etests.spring.examples.db.directintwithsql.DbDirectIntWithSqlEMTest.testSteps
+[ERROR]   Run 1: DbDirectIntWithSqlEMTest.testSteps:135 » IllegalArgument Cannot compute average on empty list
+[ERROR]   Run 2: DbDirectIntWithSqlEMTest.testSteps:135 » IllegalArgument Cannot compute average on empty list
+[ERROR]   Run 3: DbDirectIntWithSqlEMTest.testSteps:135 » IllegalArgument Cannot compute average on empty list
+[INFO]
+[INFO]
+[ERROR] Tests run: 271, Failures: 34, Errors: 1, Skipped: 6
 
 
 
