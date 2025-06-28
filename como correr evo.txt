@@ -299,5 +299,156 @@ REST calls:
 [INFO]
 [ERROR] Tests run: 271, Failures: 34, Errors: 1, Skipped: 6
 
+para correr solo 1:
+
+> mvn -pl e2e-tests/spring-rest-openapi-v3 -Dtest=WmAuth0EMTest test
+
+[INFO] Reactor Summary:
+[INFO]
+[INFO] EvoMaster 3.4.1-SNAPSHOT ........................... SUCCESS [  0.351 s]
+[INFO] evomaster-dbconstraint 3.4.1-SNAPSHOT .............. SUCCESS [  7.193 s]
+[INFO] evomaster-client-java 3.4.1-SNAPSHOT ............... SUCCESS [  0.484 s]
+[INFO] evomaster-test-utils-java 3.4.1-SNAPSHOT ........... SUCCESS [  3.123 s]
+[INFO] evomaster-test-utils 3.4.1-SNAPSHOT ................ SUCCESS [  0.021 s]
+[INFO] evomaster-test-utils-js 3.4.1-SNAPSHOT ............. SUCCESS [  0.128 s]
+[INFO] evomaster-test-utils-py 3.4.1-SNAPSHOT ............. SUCCESS [  0.129 s]
+[INFO] evomaster-client-java-sql-dto 3.4.1-SNAPSHOT ....... SUCCESS [  1.631 s]
+[INFO] evomaster-client-java-controller-api 3.4.1-SNAPSHOT  SUCCESS [  2.753 s]
+[INFO] evomaster-client-java-instrumentation-shared 3.4.1-SNAPSHOT SUCCESS [  2.820 s]
+[INFO] evomaster-client-java-util 3.4.1-SNAPSHOT .......... SUCCESS [  1.106 s]
+[INFO] evomaster-client-java-distance-heuristics 3.4.1-SNAPSHOT SUCCESS [  2.385 s]
+[INFO] evomaster-client-java-instrumentation 3.4.1-SNAPSHOT SUCCESS [ 20.059 s]
+[INFO] evomaster-ci-utils 3.4.1-SNAPSHOT .................. SUCCESS [  0.176 s]
+[INFO] evomaster-client-java-sql 3.4.1-SNAPSHOT ........... SUCCESS [ 40.268 s]
+[INFO] evomaster-client-java-controller 3.4.1-SNAPSHOT .... SUCCESS [01:55 min]
+[INFO] WFC 0.0.1-SNAPSHOT ................................. SUCCESS [  1.412 s]
+[INFO] solver 3.4.1-SNAPSHOT .............................. SUCCESS [  5.184 s]
+[INFO] evomaster-core 3.4.1-SNAPSHOT ...................... SUCCESS [14:44 min]
+[INFO] evomaster-e2e-tests 3.4.1-SNAPSHOT ................. SUCCESS [  0.021 s]
+[INFO] evomaster-e2e-tests-utils 3.4.1-SNAPSHOT ........... SUCCESS [  1.589 s]
+[INFO] evomaster-core-driver-it 3.4.1-SNAPSHOT ............ SUCCESS [  3.090 s]
+[INFO] evomaster-core-it 3.4.1-SNAPSHOT ................... SUCCESS [03:15 min]
+[INFO] evomaster-core-graphql-it 3.4.1-SNAPSHOT ........... SUCCESS [  7.243 s]
+[INFO] evomaster-client-java-dependencies 3.4.1-SNAPSHOT .. SUCCESS [  0.066 s]
+[INFO] evomaster-e2e-tests-dropwizard-examples 3.4.1-SNAPSHOT SUCCESS [  2.591 s]
+[INFO] evomaster-e2e-tests-micronaut-latest 3.4.1-SNAPSHOT  SUCCESS [ 25.855 s]
+[INFO] evomaster-e2e-tests-spring-rest-postgres 3.4.1-SNAPSHOT SUCCESS [01:56 min]
+[INFO] evomaster-e2e-tests-spring-rest-openapi-v2 3.4.1-SNAPSHOT SUCCESS [32:44 min]
+[INFO] evomaster-e2e-tests-spring-rest-openapi-v3 3.4.1-SNAPSHOT FAILURE [06:15 min]
+[INFO] evomaster-e2e-tests-spring-graphql 3.4.1-SNAPSHOT .. SKIPPED
+[INFO] evomaster-e2e-tests-spring-rest-mysql 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-e2e-tests-spring-rpc 3.4.1-SNAPSHOT ...... SKIPPED
+[INFO] evomaster-e2e-tests-spring-rpc-thrift 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-e2e-tests-spring-rpc-grpc 3.4.1-SNAPSHOT . SKIPPED
+[INFO] evomaster-e2e-tests-spring-rest-h2-v1 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-e2e-tests-spring-rest-h2-v2 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-e2e-tests-spring-rest-h2-z3solver 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-e2e-tests-spring-web 3.4.1-SNAPSHOT ...... SKIPPED
+[INFO] evomaster-e2e-tests-spring-rest-mongo 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-e2e-tests-spring-rest-bb 3.4.1-SNAPSHOT .. SKIPPED
+[INFO] evomaster-e2e-tests-spring-graphql-bb 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-e2e-tests-emb-json 3.4.1-SNAPSHOT ........ SKIPPED
+[INFO] evomaster-e2e-tests-spring-rest-multidb 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-project-report 3.4.1-SNAPSHOT ............ SKIPPED
+[INFO] evomaster-test-old-libraries 3.4.1-SNAPSHOT ........ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:03 h
+[INFO] Finished at: 2025-06-27T11:29:00-03:00
+
+
+[ERROR] Errors: 
+[ERROR] org.evomaster.e2etests.spring.openapi.v3.assertions.AssertionEMTest.testRunEMAssertionsOff
+[ERROR]   Run 1: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
+[ERROR]   Run 2: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
+[ERROR]   Run 3: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.openapi.v3.assertions.AssertionEMTest.testRunEMAssertionsOn
+[ERROR]   Run 1: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
+[ERROR]   Run 2: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
+[ERROR]   Run 3: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.openapi.v3.assertions.AssertionEMTest.testRunJavaAssertionsOff
+[ERROR]   Run 1: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
+[ERROR]   Run 2: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
+[ERROR]   Run 3: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.openapi.v3.assertions.AssertionEMTest.testRunJavaAssertionsOn
+[ERROR]   Run 1: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
+[ERROR]   Run 2: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
+[ERROR]   Run 3: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
+[INFO]
+[INFO]
+[ERROR] Tests run: 101, Failures: 0, Errors: 4, Skipped: 22
+[INFO]
+
+
+para solo correr los tests:
+
+mvn clean test
+
+
+[INFO] Reactor Summary:
+[INFO]
+[INFO] EvoMaster 3.4.1-SNAPSHOT ........................... SUCCESS [  0.294 s]
+[INFO] evomaster-dbconstraint 3.4.1-SNAPSHOT .............. SUCCESS [  6.034 s]
+[INFO] evomaster-client-java 3.4.1-SNAPSHOT ............... SUCCESS [  0.005 s]
+[INFO] evomaster-test-utils-java 3.4.1-SNAPSHOT ........... SUCCESS [  1.631 s]
+[INFO] evomaster-test-utils 3.4.1-SNAPSHOT ................ SUCCESS [  0.004 s]
+[INFO] evomaster-test-utils-js 3.4.1-SNAPSHOT ............. SUCCESS [  0.049 s]
+[INFO] evomaster-test-utils-py 3.4.1-SNAPSHOT ............. SUCCESS [  0.040 s]
+[INFO] evomaster-client-java-sql-dto 3.4.1-SNAPSHOT ....... SUCCESS [  0.137 s]
+[INFO] evomaster-client-java-controller-api 3.4.1-SNAPSHOT  SUCCESS [  0.435 s]
+[INFO] evomaster-client-java-instrumentation-shared 3.4.1-SNAPSHOT SUCCESS [  1.378 s]
+[INFO] evomaster-client-java-util 3.4.1-SNAPSHOT .......... SUCCESS [  0.073 s]
+[INFO] evomaster-client-java-distance-heuristics 3.4.1-SNAPSHOT SUCCESS [  1.285 s]
+[INFO] evomaster-client-java-instrumentation 3.4.1-SNAPSHOT SUCCESS [ 15.846 s]
+[INFO] evomaster-ci-utils 3.4.1-SNAPSHOT .................. SUCCESS [  0.070 s]
+[INFO] evomaster-client-java-sql 3.4.1-SNAPSHOT ........... SUCCESS [ 36.601 s]
+[INFO] evomaster-client-java-controller 3.4.1-SNAPSHOT .... SUCCESS [01:49 min]
+[INFO] WFC 0.0.1-SNAPSHOT ................................. SUCCESS [  1.033 s]
+[INFO] solver 3.4.1-SNAPSHOT .............................. SUCCESS [  4.757 s]
+[INFO] evomaster-core 3.4.1-SNAPSHOT ...................... SUCCESS [15:46 min]
+[INFO] evomaster-e2e-tests 3.4.1-SNAPSHOT ................. SUCCESS [  0.004 s]
+[INFO] evomaster-e2e-tests-utils 3.4.1-SNAPSHOT ........... SUCCESS [  1.697 s]
+[INFO] evomaster-core-driver-it 3.4.1-SNAPSHOT ............ SUCCESS [  0.881 s]
+[INFO] evomaster-core-it 3.4.1-SNAPSHOT ................... SUCCESS [03:24 min]
+[INFO] evomaster-core-graphql-it 3.4.1-SNAPSHOT ........... SUCCESS [  6.386 s]
+[INFO] evomaster-client-java-dependencies 3.4.1-SNAPSHOT .. SUCCESS [  0.020 s]
+[INFO] evomaster-e2e-tests-dropwizard-examples 3.4.1-SNAPSHOT SUCCESS [  2.540 s]
+[INFO] evomaster-e2e-tests-micronaut-latest 3.4.1-SNAPSHOT  FAILURE [ 16.532 s]
+[INFO] evomaster-e2e-tests-spring-rest-postgres 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-e2e-tests-spring-rest-openapi-v2 3.4.1-SNAPSHOT SKIPPED
+
+-------------------------------------------------------------------------------------------------------------
+
+evomaster-e2e-tests-spring-rest-openapi-v2 3.4.1-SNAPSHOT SUCCESS [30:23 min]
+[INFO] evomaster-e2e-tests-spring-rest-openapi-v3 3.4.1-SNAPSHOT SUCCESS [06:10 min]
+[INFO] evomaster-e2e-tests-spring-graphql 3.4.1-SNAPSHOT .. SUCCESS [06:58 min]
+[INFO] evomaster-e2e-tests-spring-rest-mysql 3.4.1-SNAPSHOT SUCCESS [05:27 min]
+[INFO] evomaster-e2e-tests-spring-rpc 3.4.1-SNAPSHOT ...... SUCCESS [  0.003 s]
+[INFO] evomaster-e2e-tests-spring-rpc-thrift 3.4.1-SNAPSHOT SUCCESS [07:41 min]
+[INFO] evomaster-e2e-tests-spring-rpc-grpc 3.4.1-SNAPSHOT . SUCCESS [ 40.925 s]
+[INFO] evomaster-e2e-tests-spring-rest-h2-v1 3.4.1-SNAPSHOT FAILURE [56:17 min]
+[INFO] evomaster-e2e-tests-spring-rest-h2-v2 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-e2e-tests-spring-rest-h2-z3solver 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-e2e-tests-spring-web 3.4.1-SNAPSHOT ...... SKIPPED
+[INFO] evomaster-e2e-tests-spring-rest-mongo 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-e2e-tests-spring-rest-bb 3.4.1-SNAPSHOT .. SKIPPED
+[INFO] evomaster-e2e-tests-spring-graphql-bb 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-e2e-tests-emb-json 3.4.1-SNAPSHOT ........ SKIPPED
+[INFO] evomaster-e2e-tests-spring-rest-multidb 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-project-report 3.4.1-SNAPSHOT ............ SKIPPED
+[INFO] evomaster-test-old-libraries 3.4.1-SNAPSHOT ........ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+
+[ERROR] Failures: 
+[ERROR] org.evomaster.e2etests.spring.examples.adaptivehypermutation.AHypermutationAWHTest.testRunMIOAWH
+[ERROR]   Run 1: AHypermutationAWHTest.testRunMIOAWH:108->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 600000 ms
+[ERROR]   Run 2: AHypermutationAWHTest.testRunMIOAWH:108->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 600000 ms
+[ERROR]   Run 3: AHypermutationAWHTest.testRunMIOAWH:108->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 600000 ms
+[INFO]
 
 

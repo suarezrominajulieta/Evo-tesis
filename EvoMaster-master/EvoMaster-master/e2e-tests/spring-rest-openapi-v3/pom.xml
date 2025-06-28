@@ -23,14 +23,14 @@
             <version>2.0.1.Final</version>
         </dependency>
         <dependency>
-            <groupId>com.github.fge</groupId>
-            <artifactId>json-patch</artifactId>
-            <version>1.9</version>
-        </dependency>
-        <dependency>
             <groupId>com.github.java-json-tools</groupId>
             <artifactId>json-patch</artifactId>
             <version>1.13</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.java-json-tools</groupId>
+            <artifactId>jackson-coreutils</artifactId>
+            <version>2.0</version>
         </dependency>
         <dependency>
             <groupId>javax.ws.rs</groupId>
