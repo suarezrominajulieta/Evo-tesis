@@ -452,3 +452,20 @@ evomaster-e2e-tests-spring-rest-openapi-v2 3.4.1-SNAPSHOT SUCCESS [30:23 min]
 [INFO]
 
 
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 601.6 s <<< FAILURE! -- in org.evomaster.e2etests.spring.examples.adaptivehypermutation.AHypermutationAWHTest
+[ERROR] org.evomaster.e2etests.spring.examples.adaptivehypermutation.AHypermutationAWHTest.testRunMIOAWH -- Time elapsed: 600.0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: execution timed out after 600000 ms
+        at org.junit.jupiter.api.AssertTimeout.assertTimeoutPreemptively(AssertTimeout.java:158)
+Caused by: org.junit.jupiter.api.AssertTimeout$ExecutionTimeoutException: Execution timed out in thread junit-timeout-thread-117
+
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 600.9 s <<< FAILURE! -- in org.evomaster.e2etests.spring.examples.adaptivehypermutation.AHypermutationAWHTest
+[ERROR] org.evomaster.e2etests.spring.examples.adaptivehypermutation.AHypermutationAWHTest.testRunMIOAWH -- Time elapsed: 600.0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: execution timed out after 600000 ms
+
+NOTE: Picked up JDK_JAVA_OPTIONS: --add-opens java.base/java.util.regex=ALL-UNNAMED --add-opens java.base/java.net=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+[INFO] Running org.evomaster.e2etests.spring.examples.adaptivehypermutation.AHypermutationAWHTest
+[ERROR] Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1222 s <<< FAILURE! -- in org.evomaster.e2etests.spring.examples.adaptivehypermutation.AHypermutationAWHTest
+[ERROR] org.evomaster.e2etests.spring.examples.adaptivehypermutation.AHypermutationAWHTest.testRunMIOAWH -- Time elapsed: 600.0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: execution timed out after 600000 ms
+
+
