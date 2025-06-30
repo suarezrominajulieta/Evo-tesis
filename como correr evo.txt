@@ -299,7 +299,7 @@ REST calls:
 [INFO]
 [ERROR] Tests run: 271, Failures: 34, Errors: 1, Skipped: 6
 
-para correr solo 1:
+para correr solo 1 test:
 
 > mvn -pl e2e-tests/spring-rest-openapi-v3 -Dtest=WmAuth0EMTest test
 
@@ -468,4 +468,316 @@ NOTE: Picked up JDK_JAVA_OPTIONS: --add-opens java.base/java.util.regex=ALL-UNNA
 [ERROR] org.evomaster.e2etests.spring.examples.adaptivehypermutation.AHypermutationAWHTest.testRunMIOAWH -- Time elapsed: 600.0 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: execution timed out after 600000 ms
 
+deshabilite ambos test de AHypermutationAWHTest, de ambos modulos
+
+
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] EvoMaster 3.4.1-SNAPSHOT ........................... SUCCESS [  0.719 s]
+[INFO] evomaster-dbconstraint 3.4.1-SNAPSHOT .............. SUCCESS [  7.490 s]
+[INFO] evomaster-client-java 3.4.1-SNAPSHOT ............... SUCCESS [  0.003 s]
+[INFO] evomaster-test-utils-java 3.4.1-SNAPSHOT ........... SUCCESS [  1.947 s]
+[INFO] evomaster-test-utils 3.4.1-SNAPSHOT ................ SUCCESS [  0.004 s]
+[INFO] evomaster-test-utils-js 3.4.1-SNAPSHOT ............. SUCCESS [  0.048 s]
+[INFO] evomaster-test-utils-py 3.4.1-SNAPSHOT ............. SUCCESS [  0.041 s]
+[INFO] evomaster-client-java-sql-dto 3.4.1-SNAPSHOT ....... SUCCESS [  0.121 s]
+[INFO] evomaster-client-java-controller-api 3.4.1-SNAPSHOT  SUCCESS [  0.432 s]
+[INFO] evomaster-client-java-instrumentation-shared 3.4.1-SNAPSHOT SUCCESS [  1.351 s]
+[INFO] evomaster-client-java-util 3.4.1-SNAPSHOT .......... SUCCESS [  0.060 s]
+[INFO] evomaster-client-java-distance-heuristics 3.4.1-SNAPSHOT SUCCESS [  1.274 s]
+[INFO] evomaster-client-java-instrumentation 3.4.1-SNAPSHOT SUCCESS [ 15.596 s]
+[INFO] evomaster-ci-utils 3.4.1-SNAPSHOT .................. SUCCESS [  0.071 s]
+[INFO] evomaster-client-java-sql 3.4.1-SNAPSHOT ........... SUCCESS [ 36.220 s]
+[INFO] evomaster-client-java-controller 3.4.1-SNAPSHOT .... SUCCESS [01:49 min]
+[INFO] WFC 0.0.1-SNAPSHOT ................................. SUCCESS [  2.268 s]
+[INFO] solver 3.4.1-SNAPSHOT .............................. SUCCESS [  4.514 s]
+[INFO] evomaster-core 3.4.1-SNAPSHOT ...................... SUCCESS [15:09 min]
+[INFO] evomaster-e2e-tests 3.4.1-SNAPSHOT ................. SUCCESS [  0.004 s]
+[INFO] evomaster-e2e-tests-utils 3.4.1-SNAPSHOT ........... SUCCESS [  1.568 s]
+[INFO] evomaster-core-driver-it 3.4.1-SNAPSHOT ............ SUCCESS [  1.049 s]
+[INFO] evomaster-core-it 3.4.1-SNAPSHOT ................... SUCCESS [03:14 min]
+[INFO] evomaster-core-graphql-it 3.4.1-SNAPSHOT ........... SUCCESS [  6.398 s]
+[INFO] evomaster-client-java-dependencies 3.4.1-SNAPSHOT .. SUCCESS [  0.018 s]
+[INFO] evomaster-e2e-tests-dropwizard-examples 3.4.1-SNAPSHOT SUCCESS [  2.713 s]
+[INFO] evomaster-e2e-tests-micronaut-latest 3.4.1-SNAPSHOT  SUCCESS [ 27.874 s]
+[INFO] evomaster-e2e-tests-spring-rest-postgres 3.4.1-SNAPSHOT SUCCESS [02:02 min]
+[INFO] evomaster-e2e-tests-spring-rest-openapi-v2 3.4.1-SNAPSHOT SUCCESS [22:57 min]
+[INFO] evomaster-e2e-tests-spring-rest-openapi-v3 3.4.1-SNAPSHOT SUCCESS [07:16 min]
+[INFO] evomaster-e2e-tests-spring-graphql 3.4.1-SNAPSHOT .. SUCCESS [07:45 min]
+[INFO] evomaster-e2e-tests-spring-rest-mysql 3.4.1-SNAPSHOT SUCCESS [06:42 min]
+[INFO] evomaster-e2e-tests-spring-rpc 3.4.1-SNAPSHOT ...... SUCCESS [  0.005 s]
+[INFO] evomaster-e2e-tests-spring-rpc-thrift 3.4.1-SNAPSHOT SUCCESS [09:09 min]
+[INFO] evomaster-e2e-tests-spring-rpc-grpc 3.4.1-SNAPSHOT . SUCCESS [ 42.243 s]
+[INFO] evomaster-e2e-tests-spring-rest-h2-v1 3.4.1-SNAPSHOT SUCCESS [10:52 min]
+[INFO] evomaster-e2e-tests-spring-rest-h2-v2 3.4.1-SNAPSHOT SUCCESS [01:09 min]
+[INFO] evomaster-e2e-tests-spring-rest-h2-z3solver 3.4.1-SNAPSHOT SUCCESS [ 51.817 s]
+[INFO] evomaster-e2e-tests-spring-web 3.4.1-SNAPSHOT ...... SUCCESS [02:16 min]
+[INFO] evomaster-e2e-tests-spring-rest-mongo 3.4.1-SNAPSHOT SUCCESS [19:25 min]
+[INFO] evomaster-e2e-tests-spring-rest-bb 3.4.1-SNAPSHOT .. FAILURE [12:51 min]
+[INFO] evomaster-e2e-tests-spring-graphql-bb 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-e2e-tests-emb-json 3.4.1-SNAPSHOT ........ SKIPPED
+[INFO] evomaster-e2e-tests-spring-rest-multidb 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-project-report 3.4.1-SNAPSHOT ............ SKIPPED
+[INFO] evomaster-test-old-libraries 3.4.1-SNAPSHOT ........ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:06 h
+[INFO] Finished at: 2025-06-29T01:38:35-03:00
+
+
+[INFO] 
+[INFO] Results:
+[INFO]
+[ERROR] Errors: 
+[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 2: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 3: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieRedirectEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 2: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 3: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.authheader.BBAuthEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 2: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 3: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.authtoken.BBAuthTokenEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 2: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 3: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.chainedlocation.BBChainedLocationEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 2: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 3: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.coveragequery.BBCoverageQueryEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 2: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 3: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.datapool.BBDataPoolEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 2: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 3: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.defaultvalues.BBDefaultEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 2: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 3: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.exampleobject.BBExampleObjectEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 2: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 3: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.examplevalues.BBExamplesEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 2: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 3: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.inputs.BBInputsEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 2: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 3: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.links.BBLinksEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 2: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 3: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.linksmulti.BBLinksMultiEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 2: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 3: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.primitives.BBPrimitivesEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBPrimitivesEMTest.testBlackBoxOutput:33->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 2: BBPrimitivesEMTest.testBlackBoxOutput:33->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[ERROR]   Run 3: BBPrimitivesEMTest.testBlackBoxOutput:33->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
+[INFO]
+[WARNING] Flakes: 
+[WARNING] org.evomaster.e2etests.spring.rest.bb.datapool.BBDataPoolEMTest.testBlackBoxOutput(OutputFormat)[4]
+[ERROR]   Run 1: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:136 » IllegalState Maven tests failed with status code: 1
+[INFO]   Run 2: PASS
+[INFO]
+[INFO]
+[ERROR] Tests run: 106, Failures: 0, Errors: 14, Skipped: 15, Flakes: 1
+
+
+
+Microsoft Windows [Versión 10.0.26100.4349]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Usuario>python --version
+Python 3.13.5
+
+C:\Users\Usuario>pip --version
+pip 25.1.1 from C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages\pip (python 3.13)
+
+C:\Users\Usuario>npm --version
+10.9.2
+
+C:\Users\Usuario>
+
+
+
+[INFO]
+[ERROR] Errors: 
+[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieEMTest.testBlackBoxOutput(OutputFormat)[6]
+[ERROR]   Run 1: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM tests failed with status code: 1
+[ERROR]   Run 2: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 3: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState requirements installation failed with status code: 120
+[ERROR]   Run 2: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 3: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieRedirectEMTest.testBlackBoxOutput(OutputFormat)[6]
+[ERROR]   Run 1: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 2: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 3: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieRedirectEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 2: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 3: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.authheader.BBAuthEMTest.testBlackBoxOutput(OutputFormat)[6]
+[ERROR]   Run 1: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 2: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 3: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.authheader.BBAuthEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 2: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 3: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.authtoken.BBAuthTokenEMTest.testBlackBoxOutput(OutputFormat)[6]
+[ERROR]   Run 1: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 2: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 3: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.authtoken.BBAuthTokenEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 2: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 3: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.chainedlocation.BBChainedLocationEMTest.testBlackBoxOutput(OutputFormat)[6]
+[ERROR]   Run 1: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 2: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 3: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.chainedlocation.BBChainedLocationEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 2: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 3: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.coveragequery.BBCoverageQueryEMTest.testBlackBoxOutput(OutputFormat)[6]
+[ERROR]   Run 1: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 2: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 3: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.coveragequery.BBCoverageQueryEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 2: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 3: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.datapool.BBDataPoolEMTest.testBlackBoxOutput(OutputFormat)[6]
+[ERROR]   Run 1: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 2: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 3: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.datapool.BBDataPoolEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 2: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 3: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.defaultvalues.BBDefaultEMTest.testBlackBoxOutput(OutputFormat)[6]
+[ERROR]   Run 1: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 2: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 3: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.defaultvalues.BBDefaultEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 2: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 3: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.exampleobject.BBExampleObjectEMTest.testBlackBoxOutput(OutputFormat)[6]
+[ERROR]   Run 1: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 2: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 3: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.exampleobject.BBExampleObjectEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 2: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 3: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.examplevalues.BBExamplesEMTest.testBlackBoxOutput(OutputFormat)[6]
+[ERROR]   Run 1: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 2: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 3: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.examplevalues.BBExamplesEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 2: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 3: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.inputs.BBInputsEMTest.testBlackBoxOutput(OutputFormat)[6]
+[ERROR]   Run 1: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 2: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 3: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.inputs.BBInputsEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 2: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 3: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.links.BBLinksEMTest.testBlackBoxOutput(OutputFormat)[6]
+[ERROR]   Run 1: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 2: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 3: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.links.BBLinksEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 2: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 3: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.linksmulti.BBLinksMultiEMTest.testBlackBoxOutput(OutputFormat)[6]
+[ERROR]   Run 1: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 2: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[ERROR]   Run 3: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.linksmulti.BBLinksMultiEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 2: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 3: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[INFO]
+[ERROR] org.evomaster.e2etests.spring.rest.bb.primitives.BBPrimitivesEMTest.testBlackBoxOutput(OutputFormat)[7]
+[ERROR]   Run 1: BBPrimitivesEMTest.testBlackBoxOutput:33->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 2: BBPrimitivesEMTest.testBlackBoxOutput:33->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[ERROR]   Run 3: BBPrimitivesEMTest.testBlackBoxOutput:33->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
+[INFO]
+
+
+[INFO] evomaster-e2e-tests-spring-web 3.4.1-SNAPSHOT ...... SUCCESS [02:10 min]
+[INFO] evomaster-e2e-tests-spring-rest-mongo 3.4.1-SNAPSHOT SUCCESS [16:40 min]
+[INFO] evomaster-e2e-tests-spring-rest-bb 3.4.1-SNAPSHOT .. FAILURE [12:12 min]
+[INFO] evomaster-e2e-tests-spring-graphql-bb 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-e2e-tests-emb-json 3.4.1-SNAPSHOT ........ SKIPPED
+[INFO] evomaster-e2e-tests-spring-rest-multidb 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-project-report 3.4.1-SNAPSHOT ............ SKIPPED
+[INFO] evomaster-test-old-libraries 3.4.1-SNAPSHOT ........ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+
+
+> mvn test -rf :evomaster-e2e-tests-spring-rest-bb
 
