@@ -516,7 +516,7 @@ deshabilite ambos test de AHypermutationAWHTest, de ambos modulos
 [INFO] evomaster-e2e-tests-spring-web 3.4.1-SNAPSHOT ...... SUCCESS [02:16 min]
 [INFO] evomaster-e2e-tests-spring-rest-mongo 3.4.1-SNAPSHOT SUCCESS [19:25 min]
 [INFO] evomaster-e2e-tests-spring-rest-bb 3.4.1-SNAPSHOT .. FAILURE [12:51 min]
-[INFO] evomaster-e2e-tests-spring-graphql-bb 3.4.1-SNAPSHOT SKIPPED
+[INFO] evomaster-e2e-tests-spring-graphql-bb 3.4.1-SNAPSHOT SKIPPED    
 [INFO] evomaster-e2e-tests-emb-json 3.4.1-SNAPSHOT ........ SKIPPED
 [INFO] evomaster-e2e-tests-spring-rest-multidb 3.4.1-SNAPSHOT SKIPPED
 [INFO] evomaster-project-report 3.4.1-SNAPSHOT ............ SKIPPED
@@ -779,5 +779,59 @@ C:\Users\Usuario>
 [INFO] BUILD FAILURE
 
 
-> mvn test -rf :evomaster-e2e-tests-spring-rest-bb
+> mvn test -rf :evomaster-e2e-tests-spring-rest-bb rompe
+
+
+[INFO] evomaster-e2e-tests-spring-graphql-bb 3.4.1-SNAPSHOT SKIPPED  este corre bien
+mvn test -rf :evomaster-e2e-tests-spring-rest-multidb este corre bien
+mvn test -rf :evomaster-project-report este corre bien
+mvn test -rf :evomaster-test-old-libraries este corre bien
+
+
+[INFO] evomaster-e2e-tests-emb-json ....................... FAILURE [02:58 min]
+
+[INFO]
+[ERROR] Failures: 
+[ERROR] org.evomaster.e2etests.emb.json.genome.GenomeNexusExampleEMTest.runEMTest
+[ERROR]   Run 1: GenomeNexusExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$runTestHandlingFlaky$4:233->lambda$runEMTest$0:32->RestTestBase.assertHasAtLeastOne:313 Seed 44. Missing 200 POST /api/json Teal
+REST calls:
+200 GET /v2/api-docs , auth=NoAuth
+204 POST /api/json , auth=NoAuth
+400 POST /api/json , auth=NoAuth
+ ==> expected: <true> but was: <false>
+[ERROR]   Run 2: GenomeNexusExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$runTestHandlingFlaky$4:233->lambda$runEMTest$0:32->RestTestBase.assertHasAtLeastOne:313 Seed 44. Missing 200 POST /api/json Teal
+REST calls:
+200 GET /v2/api-docs , auth=NoAuth
+204 POST /api/json , auth=NoAuth
+400 POST /api/json , auth=NoAuth
+ ==> expected: <true> but was: <false>
+[ERROR]   Run 3: GenomeNexusExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$runTestHandlingFlaky$4:233->lambda$runEMTest$0:32->RestTestBase.assertHasAtLeastOne:313 Seed 44. Missing 200 POST /api/json Teal
+REST calls:
+200 GET /v2/api-docs , auth=NoAuth
+204 POST /api/json , auth=NoAuth
+400 POST /api/json , auth=NoAuth
+ ==> expected: <true> but was: <false>
+[INFO]
+[ERROR] org.evomaster.e2etests.emb.json.gestaohospital.GestaoHospitalExampleEMTest.runEMTest
+[ERROR]   Run 1: GestaoHospitalExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.GestaoHospitalExampleGeneratedEMTest>
+[ERROR]   Run 2: GestaoHospitalExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.GestaoHospitalExampleGeneratedEMTest>
+[ERROR]   Run 3: GestaoHospitalExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.GestaoHospitalExampleGeneratedEMTest>
+[INFO]
+[ERROR] org.evomaster.e2etests.emb.json.language.LanguageServerExampleEMTest.runEMTest
+[ERROR]   Run 1: LanguageServerExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.LanguageServerExampleGeneratedEMTest>
+[ERROR]   Run 2: LanguageServerExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.LanguageServerExampleGeneratedEMTest>
+[ERROR]   Run 3: LanguageServerExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.LanguageServerExampleGeneratedEMTest>
+[INFO]
+[ERROR] org.evomaster.e2etests.emb.json.proxyprint.ProxyPrintExampleEMTest.runEMTest
+[ERROR]   Run 1: ProxyPrintExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.ProxyPrintExampleGeneratedEMTest>
+[ERROR]   Run 2: ProxyPrintExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.ProxyPrintExampleGeneratedEMTest>
+[ERROR]   Run 3: ProxyPrintExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.ProxyPrintExampleGeneratedEMTest>
+[INFO]
+[ERROR] org.evomaster.e2etests.emb.json.tiltaksgjennomforing.TiltaksgjennomforingExampleEMTest.runEMTest
+[ERROR]   Run 1: TiltaksgjennomforingExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.TiltaksgjennomforingExampleGeneratedEMTest>
+[ERROR]   Run 2: TiltaksgjennomforingExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.TiltaksgjennomforingExampleGeneratedEMTest>
+[ERROR]   Run 3: TiltaksgjennomforingExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.TiltaksgjennomforingExampleGeneratedEMTest>
+[INFO]
+[INFO]
+[ERROR] Tests run: 46, Failures: 5, Errors: 0, Skipped: 0
 
