@@ -165,284 +165,17 @@ org.evomaster.core.problem.rest.SamplerVerifierTest.testSamplingFromAllSchemasUn
 openjdk 8
 
 
-[INFO] evomaster-e2e-tests-spring-rest-openapi-v2 3.4.1-SNAPSHOT FAILURE [  01:04 h]
- org.evomaster.e2etests.spring.examples.adaptivehypermutation.AHypermutationAWHTest.testRunMIOAWH
-
-
-[INFO] ------------------------------------------------------------------------
-[INFO] Reactor Summary:
-[INFO]
-[INFO] EvoMaster 3.4.1-SNAPSHOT ........................... SUCCESS [  0.409 s]
-[INFO] evomaster-dbconstraint 3.4.1-SNAPSHOT .............. SUCCESS [  6.385 s]
-[INFO] evomaster-client-java 3.4.1-SNAPSHOT ............... SUCCESS [  0.407 s]
-[INFO] evomaster-test-utils-java 3.4.1-SNAPSHOT ........... SUCCESS [  2.297 s]
-[INFO] evomaster-test-utils 3.4.1-SNAPSHOT ................ SUCCESS [  0.016 s]
-[INFO] evomaster-test-utils-js 3.4.1-SNAPSHOT ............. SUCCESS [  0.137 s]
-[INFO] evomaster-test-utils-py 3.4.1-SNAPSHOT ............. SUCCESS [  0.115 s]
-[INFO] evomaster-client-java-sql-dto 3.4.1-SNAPSHOT ....... SUCCESS [  0.978 s]
-[INFO] evomaster-client-java-controller-api 3.4.1-SNAPSHOT  SUCCESS [  1.650 s]
-[INFO] evomaster-client-java-instrumentation-shared 3.4.1-SNAPSHOT SUCCESS [  2.177 s]
-[INFO] evomaster-client-java-util 3.4.1-SNAPSHOT .......... SUCCESS [  0.707 s]
-[INFO] evomaster-client-java-distance-heuristics 3.4.1-SNAPSHOT SUCCESS [  1.875 s]
-[INFO] evomaster-client-java-instrumentation 3.4.1-SNAPSHOT SUCCESS [ 18.296 s]
-[INFO] evomaster-ci-utils 3.4.1-SNAPSHOT .................. SUCCESS [  0.174 s]
-[INFO] evomaster-client-java-sql 3.4.1-SNAPSHOT ........... SUCCESS [ 36.507 s]
-[INFO] evomaster-client-java-controller 3.4.1-SNAPSHOT .... SUCCESS [01:48 min]
-[INFO] WFC 0.0.1-SNAPSHOT ................................. SUCCESS [  1.041 s]
-[INFO] solver 3.4.1-SNAPSHOT .............................. SUCCESS [  5.815 s]
-[INFO] evomaster-core 3.4.1-SNAPSHOT ...................... SUCCESS [14:55 min]
-[INFO] evomaster-e2e-tests 3.4.1-SNAPSHOT ................. SUCCESS [  0.018 s]
-[INFO] evomaster-e2e-tests-utils 3.4.1-SNAPSHOT ........... SUCCESS [  1.418 s]
-[INFO] evomaster-core-driver-it 3.4.1-SNAPSHOT ............ SUCCESS [  2.899 s]
-[INFO] evomaster-core-it 3.4.1-SNAPSHOT ................... SUCCESS [03:31 min]
-[INFO] evomaster-core-graphql-it 3.4.1-SNAPSHOT ........... FAILURE [  0.309 s]
-
-
-[INFO] evomaster-e2e-tests-spring-rest-openapi-v2 3.4.1-SNAPSHOT FAILURE [28:59 min]
-
-[ERROR] Failures: 
-[ERROR] org.evomaster.e2etests.spring.examples.adaptivehypermutation.AHypermutationAWHTest.testRunMIOAWH
-[ERROR]   Run 1: AHypermutationAWHTest.testRunMIOAWH:110->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 120000 ms
-[ERROR]   Run 2: AHypermutationAWHTest.testRunMIOAWH:110->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 120000 ms
-[ERROR]   Run 3: AHypermutationAWHTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->lambda$testRunMIOAWH$2:150->RestTestBase.initAndRun:25 Assertion failed
-
-
-[ERROR] Failures: 
-[ERROR]   WmAuth0EMTest.testRunEM:29->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms  
-[ERROR]   WmJsonMapEMTest.testRunEM:29->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms
-[ERROR]   WmOkHttpEMTest.testRunEM:29->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms 
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.urlopen.WmUrlOpenEMTest.testRunEM
-[ERROR]   Run 1: WmUrlOpenEMTest.testRunEM:33->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms
-[ERROR]   Run 2: WmUrlOpenEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->testRunEM$lambda$0:45->RestTestBase.initAndRun:25 Assertion failed
-[INFO]
-[ERROR] Errors: 
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.assertions.AssertionEMTest.null
-[ERROR]   Run 1: AssertionEMTest.init:-1 » KillSwitch
-[ERROR]   Run 2: AssertionEMTest.init:-1 » KillSwitch
-[INFO]
-[ERROR]   AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: com.github.fge.jackson.JsonNumEquals.getInstance()Lcom/github/fge/jackson/JsonNumEquals;
-[ERROR]   AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: com.github.fge.jackson.JsonNumEquals.getInstance()Lcom/github/fge/jackson/JsonNumEquals;
-[ERROR]   AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: com.github.fge.jackson.JsonNumEquals.getInstance()Lcom/github/fge/jackson/JsonNumEquals;
-[ERROR]   AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: com.github.fge.jackson.JsonNumEquals.getInstance()Lcom/github/fge/jackson/JsonNumEquals;
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.auth0.WmAuth0EMTest.null
-[ERROR]   Run 1: WmAuth0EMTest.init:-1 » KillSwitch
-[ERROR]   Run 2: WmAuth0EMTest.init:-1 » KillSwitch
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.jsonmap.WmJsonMapEMTest.null
-[ERROR]   Run 1: WmJsonMapEMTest.init:-1 » KillSwitch
-[ERROR]   Run 2: WmJsonMapEMTest.init:-1 » KillSwitch
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.okhttp.WmOkHttpEMTest.null
-[ERROR]   Run 1: WmOkHttpEMTest.init:-1 » KillSwitch
-[ERROR]   Run 2: WmOkHttpEMTest.init:-1 » KillSwitch
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.okhttp3.WMHttpsTest.null
-[ERROR]   Run 1: WMHttpsTest.setup:-1 » FatalStartup java.lang.RuntimeException: java.io.IOException: Failed to bind to /127.0.0.12:8080
-[ERROR]   Run 2: WMHttpsTest.setup:-1 » FatalStartup java.lang.RuntimeException: java.io.IOException: Failed to bind to /127.0.0.12:8080
-[ERROR]   Run 3: WMHttpsTest.setup:-1 » FatalStartup java.lang.RuntimeException: java.io.IOException: Failed to bind to /127.0.0.12:8080
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.urlopen.WmUrlOpenEMTest.null
-[ERROR]   Run 1: WmUrlOpenEMTest>EnterpriseTestBase.lambda$tearDown$0:96 expected: <true> but was: <false>
-[ERROR]   Run 2: WmUrlOpenEMTest.init:-1 » KillSwitch
-[INFO]
-[INFO]
-[ERROR] Tests run: 104, Failures: 4, Errors: 10, Skipped: 22
-
-
-
-Cambie la seed del y puse todo como estaba y dio:
-
-[INFO] Reactor Summary for evomaster-core-graphql-it 3.4.1-SNAPSHOT:
-[INFO]
-[INFO] evomaster-core-graphql-it .......................... SUCCESS [  8.331 s]
-[INFO] evomaster-client-java-dependencies ................. SUCCESS [  0.437 s]
-[INFO] evomaster-e2e-tests-dropwizard-examples ............ SUCCESS [  1.841 s]
-[INFO] evomaster-e2e-tests-micronaut-latest ............... SUCCESS [ 22.727 s]
-[INFO] evomaster-e2e-tests-spring-rest-postgres ........... SUCCESS [01:59 min]
-[INFO] evomaster-e2e-tests-spring-rest-openapi-v2 ......... FAILURE [  01:12 h]
-
-
-
-[ERROR] org.evomaster.e2etests.spring.examples.valid.ValidEMTest.testRunEM
-[ERROR]   Run 1: ValidEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->lambda$testRunEM$0:33->RestTestBase.assertHasAtLeastOne:313 Seed 44. Missing 200 POST /api/valid OK
-REST calls:
-200 GET /v2/api-docs , auth=NoAuth
-400 POST /api/valid?EMextraParam123=_EM_229_XYZ_ , auth=NoAuth
- ==> expected: <true> but was: <false>
-[ERROR]   Run 2: ValidEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->lambda$testRunEM$0:33->RestTestBase.assertHasAtLeastOne:313 Seed 44. Missing 200 POST /api/valid OK
-REST calls:
-200 GET /v2/api-docs , auth=NoAuth
-400 POST /api/valid?EMextraParam123=_EM_229_XYZ_ , auth=NoAuth
- ==> expected: <true> but was: <false>
-[ERROR]   Run 3: ValidEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->lambda$testRunEM$0:33->RestTestBase.assertHasAtLeastOne:313 Seed 44. Missing 200 POST /api/valid OK
-REST calls:
-200 GET /v2/api-docs , auth=NoAuth
-400 POST /api/valid?EMextraParam123=_EM_229_XYZ_ , auth=NoAuth
- ==> expected: <true> but was: <false>
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.examples.wiremock.service.ExternalServiceMockingEMTest.externalServiceSuccessTest
-[ERROR]   Run 1: ExternalServiceMockingEMTest.externalServiceSuccessTest:57 expected: <1.0> but was: <0.0>
-[ERROR]   Run 2: ExternalServiceMockingEMTest.externalServiceSuccessTest:57 expected: <1.0> but was: <0.0>
-[ERROR]   Run 3: ExternalServiceMockingEMTest.externalServiceSuccessTest:57 expected: <1.0> but was: <0.0>
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.examples.wiremock.service.ExternalServiceMockingFlakyEMTest.externalServiceMockingTest
-[ERROR]   Run 1: ExternalServiceMockingFlakyEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->lambda$externalServiceMockingTest$0:54 expected: <true> but was: <false>
-[ERROR]   Run 2: ExternalServiceMockingFlakyEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->lambda$externalServiceMockingTest$0:54 expected: <true> but was: <false>
-[ERROR]   Run 3: ExternalServiceMockingFlakyEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->lambda$externalServiceMockingTest$0:54 expected: <true> but was: <false>
-[INFO]
-[ERROR] Errors: 
-[ERROR] org.evomaster.e2etests.spring.examples.db.directintwithsql.DbDirectIntWithSqlEMTest.testSteps
-[ERROR]   Run 1: DbDirectIntWithSqlEMTest.testSteps:135 » IllegalArgument Cannot compute average on empty list
-[ERROR]   Run 2: DbDirectIntWithSqlEMTest.testSteps:135 » IllegalArgument Cannot compute average on empty list
-[ERROR]   Run 3: DbDirectIntWithSqlEMTest.testSteps:135 » IllegalArgument Cannot compute average on empty list
-[INFO]
-[INFO]
-[ERROR] Tests run: 271, Failures: 34, Errors: 1, Skipped: 6
 
 para correr solo 1 test:
 
 > mvn -pl e2e-tests/spring-rest-openapi-v3 -Dtest=WmAuth0EMTest test
 
-[INFO] Reactor Summary:
-[INFO]
-[INFO] EvoMaster 3.4.1-SNAPSHOT ........................... SUCCESS [  0.351 s]
-[INFO] evomaster-dbconstraint 3.4.1-SNAPSHOT .............. SUCCESS [  7.193 s]
-[INFO] evomaster-client-java 3.4.1-SNAPSHOT ............... SUCCESS [  0.484 s]
-[INFO] evomaster-test-utils-java 3.4.1-SNAPSHOT ........... SUCCESS [  3.123 s]
-[INFO] evomaster-test-utils 3.4.1-SNAPSHOT ................ SUCCESS [  0.021 s]
-[INFO] evomaster-test-utils-js 3.4.1-SNAPSHOT ............. SUCCESS [  0.128 s]
-[INFO] evomaster-test-utils-py 3.4.1-SNAPSHOT ............. SUCCESS [  0.129 s]
-[INFO] evomaster-client-java-sql-dto 3.4.1-SNAPSHOT ....... SUCCESS [  1.631 s]
-[INFO] evomaster-client-java-controller-api 3.4.1-SNAPSHOT  SUCCESS [  2.753 s]
-[INFO] evomaster-client-java-instrumentation-shared 3.4.1-SNAPSHOT SUCCESS [  2.820 s]
-[INFO] evomaster-client-java-util 3.4.1-SNAPSHOT .......... SUCCESS [  1.106 s]
-[INFO] evomaster-client-java-distance-heuristics 3.4.1-SNAPSHOT SUCCESS [  2.385 s]
-[INFO] evomaster-client-java-instrumentation 3.4.1-SNAPSHOT SUCCESS [ 20.059 s]
-[INFO] evomaster-ci-utils 3.4.1-SNAPSHOT .................. SUCCESS [  0.176 s]
-[INFO] evomaster-client-java-sql 3.4.1-SNAPSHOT ........... SUCCESS [ 40.268 s]
-[INFO] evomaster-client-java-controller 3.4.1-SNAPSHOT .... SUCCESS [01:55 min]
-[INFO] WFC 0.0.1-SNAPSHOT ................................. SUCCESS [  1.412 s]
-[INFO] solver 3.4.1-SNAPSHOT .............................. SUCCESS [  5.184 s]
-[INFO] evomaster-core 3.4.1-SNAPSHOT ...................... SUCCESS [14:44 min]
-[INFO] evomaster-e2e-tests 3.4.1-SNAPSHOT ................. SUCCESS [  0.021 s]
-[INFO] evomaster-e2e-tests-utils 3.4.1-SNAPSHOT ........... SUCCESS [  1.589 s]
-[INFO] evomaster-core-driver-it 3.4.1-SNAPSHOT ............ SUCCESS [  3.090 s]
-[INFO] evomaster-core-it 3.4.1-SNAPSHOT ................... SUCCESS [03:15 min]
-[INFO] evomaster-core-graphql-it 3.4.1-SNAPSHOT ........... SUCCESS [  7.243 s]
-[INFO] evomaster-client-java-dependencies 3.4.1-SNAPSHOT .. SUCCESS [  0.066 s]
-[INFO] evomaster-e2e-tests-dropwizard-examples 3.4.1-SNAPSHOT SUCCESS [  2.591 s]
-[INFO] evomaster-e2e-tests-micronaut-latest 3.4.1-SNAPSHOT  SUCCESS [ 25.855 s]
-[INFO] evomaster-e2e-tests-spring-rest-postgres 3.4.1-SNAPSHOT SUCCESS [01:56 min]
-[INFO] evomaster-e2e-tests-spring-rest-openapi-v2 3.4.1-SNAPSHOT SUCCESS [32:44 min]
-[INFO] evomaster-e2e-tests-spring-rest-openapi-v3 3.4.1-SNAPSHOT FAILURE [06:15 min]
-[INFO] evomaster-e2e-tests-spring-graphql 3.4.1-SNAPSHOT .. SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-mysql 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rpc 3.4.1-SNAPSHOT ...... SKIPPED
-[INFO] evomaster-e2e-tests-spring-rpc-thrift 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rpc-grpc 3.4.1-SNAPSHOT . SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-h2-v1 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-h2-v2 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-h2-z3solver 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-web 3.4.1-SNAPSHOT ...... SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-mongo 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-bb 3.4.1-SNAPSHOT .. SKIPPED
-[INFO] evomaster-e2e-tests-spring-graphql-bb 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-emb-json 3.4.1-SNAPSHOT ........ SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-multidb 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-project-report 3.4.1-SNAPSHOT ............ SKIPPED
-[INFO] evomaster-test-old-libraries 3.4.1-SNAPSHOT ........ SKIPPED
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:03 h
-[INFO] Finished at: 2025-06-27T11:29:00-03:00
-
-
-[ERROR] Errors: 
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.assertions.AssertionEMTest.testRunEMAssertionsOff
-[ERROR]   Run 1: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
-[ERROR]   Run 2: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
-[ERROR]   Run 3: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.assertions.AssertionEMTest.testRunEMAssertionsOn
-[ERROR]   Run 1: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
-[ERROR]   Run 2: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
-[ERROR]   Run 3: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.assertions.AssertionEMTest.testRunJavaAssertionsOff
-[ERROR]   Run 1: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
-[ERROR]   Run 2: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
-[ERROR]   Run 3: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.assertions.AssertionEMTest.testRunJavaAssertionsOn
-[ERROR]   Run 1: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
-[ERROR]   Run 2: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
-[ERROR]   Run 3: AssertionEMTest.access$handleFlaky:22->EnterpriseTestBase.handleFlaky:455->access$initAndRun:22->RestTestBase.initAndRun:25 » Execution com.google.common.util.concurrent.ExecutionError: java.lang.NoSuchMethodError: 'com.github.fge.jackson.JsonNumEquals com.github.fge.jackson.JsonNumEquals.getInstance()'
-[INFO]
-[INFO]
-[ERROR] Tests run: 101, Failures: 0, Errors: 4, Skipped: 22
-[INFO]
 
 
 para solo correr los tests:
 
 mvn clean test
 
-
-[INFO] Reactor Summary:
-[INFO]
-[INFO] EvoMaster 3.4.1-SNAPSHOT ........................... SUCCESS [  0.294 s]
-[INFO] evomaster-dbconstraint 3.4.1-SNAPSHOT .............. SUCCESS [  6.034 s]
-[INFO] evomaster-client-java 3.4.1-SNAPSHOT ............... SUCCESS [  0.005 s]
-[INFO] evomaster-test-utils-java 3.4.1-SNAPSHOT ........... SUCCESS [  1.631 s]
-[INFO] evomaster-test-utils 3.4.1-SNAPSHOT ................ SUCCESS [  0.004 s]
-[INFO] evomaster-test-utils-js 3.4.1-SNAPSHOT ............. SUCCESS [  0.049 s]
-[INFO] evomaster-test-utils-py 3.4.1-SNAPSHOT ............. SUCCESS [  0.040 s]
-[INFO] evomaster-client-java-sql-dto 3.4.1-SNAPSHOT ....... SUCCESS [  0.137 s]
-[INFO] evomaster-client-java-controller-api 3.4.1-SNAPSHOT  SUCCESS [  0.435 s]
-[INFO] evomaster-client-java-instrumentation-shared 3.4.1-SNAPSHOT SUCCESS [  1.378 s]
-[INFO] evomaster-client-java-util 3.4.1-SNAPSHOT .......... SUCCESS [  0.073 s]
-[INFO] evomaster-client-java-distance-heuristics 3.4.1-SNAPSHOT SUCCESS [  1.285 s]
-[INFO] evomaster-client-java-instrumentation 3.4.1-SNAPSHOT SUCCESS [ 15.846 s]
-[INFO] evomaster-ci-utils 3.4.1-SNAPSHOT .................. SUCCESS [  0.070 s]
-[INFO] evomaster-client-java-sql 3.4.1-SNAPSHOT ........... SUCCESS [ 36.601 s]
-[INFO] evomaster-client-java-controller 3.4.1-SNAPSHOT .... SUCCESS [01:49 min]
-[INFO] WFC 0.0.1-SNAPSHOT ................................. SUCCESS [  1.033 s]
-[INFO] solver 3.4.1-SNAPSHOT .............................. SUCCESS [  4.757 s]
-[INFO] evomaster-core 3.4.1-SNAPSHOT ...................... SUCCESS [15:46 min]
-[INFO] evomaster-e2e-tests 3.4.1-SNAPSHOT ................. SUCCESS [  0.004 s]
-[INFO] evomaster-e2e-tests-utils 3.4.1-SNAPSHOT ........... SUCCESS [  1.697 s]
-[INFO] evomaster-core-driver-it 3.4.1-SNAPSHOT ............ SUCCESS [  0.881 s]
-[INFO] evomaster-core-it 3.4.1-SNAPSHOT ................... SUCCESS [03:24 min]
-[INFO] evomaster-core-graphql-it 3.4.1-SNAPSHOT ........... SUCCESS [  6.386 s]
-[INFO] evomaster-client-java-dependencies 3.4.1-SNAPSHOT .. SUCCESS [  0.020 s]
-[INFO] evomaster-e2e-tests-dropwizard-examples 3.4.1-SNAPSHOT SUCCESS [  2.540 s]
-[INFO] evomaster-e2e-tests-micronaut-latest 3.4.1-SNAPSHOT  FAILURE [ 16.532 s]
-[INFO] evomaster-e2e-tests-spring-rest-postgres 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-openapi-v2 3.4.1-SNAPSHOT SKIPPED
-
--------------------------------------------------------------------------------------------------------------
-
-evomaster-e2e-tests-spring-rest-openapi-v2 3.4.1-SNAPSHOT SUCCESS [30:23 min]
-[INFO] evomaster-e2e-tests-spring-rest-openapi-v3 3.4.1-SNAPSHOT SUCCESS [06:10 min]
-[INFO] evomaster-e2e-tests-spring-graphql 3.4.1-SNAPSHOT .. SUCCESS [06:58 min]
-[INFO] evomaster-e2e-tests-spring-rest-mysql 3.4.1-SNAPSHOT SUCCESS [05:27 min]
-[INFO] evomaster-e2e-tests-spring-rpc 3.4.1-SNAPSHOT ...... SUCCESS [  0.003 s]
-[INFO] evomaster-e2e-tests-spring-rpc-thrift 3.4.1-SNAPSHOT SUCCESS [07:41 min]
-[INFO] evomaster-e2e-tests-spring-rpc-grpc 3.4.1-SNAPSHOT . SUCCESS [ 40.925 s]
-[INFO] evomaster-e2e-tests-spring-rest-h2-v1 3.4.1-SNAPSHOT FAILURE [56:17 min]
-[INFO] evomaster-e2e-tests-spring-rest-h2-v2 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-h2-z3solver 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-web 3.4.1-SNAPSHOT ...... SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-mongo 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-bb 3.4.1-SNAPSHOT .. SKIPPED
-[INFO] evomaster-e2e-tests-spring-graphql-bb 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-emb-json 3.4.1-SNAPSHOT ........ SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-multidb 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-project-report 3.4.1-SNAPSHOT ............ SKIPPED
-[INFO] evomaster-test-old-libraries 3.4.1-SNAPSHOT ........ SKIPPED
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
 
 [ERROR] Failures: 
 [ERROR] org.evomaster.e2etests.spring.examples.adaptivehypermutation.AHypermutationAWHTest.testRunMIOAWH
@@ -471,147 +204,6 @@ org.opentest4j.AssertionFailedError: execution timed out after 600000 ms
 deshabilite ambos test de AHypermutationAWHTest, de ambos modulos
 
 
-[INFO]
-[INFO] ------------------------------------------------------------------------
-[INFO] Reactor Summary:
-[INFO]
-[INFO] EvoMaster 3.4.1-SNAPSHOT ........................... SUCCESS [  0.719 s]
-[INFO] evomaster-dbconstraint 3.4.1-SNAPSHOT .............. SUCCESS [  7.490 s]
-[INFO] evomaster-client-java 3.4.1-SNAPSHOT ............... SUCCESS [  0.003 s]
-[INFO] evomaster-test-utils-java 3.4.1-SNAPSHOT ........... SUCCESS [  1.947 s]
-[INFO] evomaster-test-utils 3.4.1-SNAPSHOT ................ SUCCESS [  0.004 s]
-[INFO] evomaster-test-utils-js 3.4.1-SNAPSHOT ............. SUCCESS [  0.048 s]
-[INFO] evomaster-test-utils-py 3.4.1-SNAPSHOT ............. SUCCESS [  0.041 s]
-[INFO] evomaster-client-java-sql-dto 3.4.1-SNAPSHOT ....... SUCCESS [  0.121 s]
-[INFO] evomaster-client-java-controller-api 3.4.1-SNAPSHOT  SUCCESS [  0.432 s]
-[INFO] evomaster-client-java-instrumentation-shared 3.4.1-SNAPSHOT SUCCESS [  1.351 s]
-[INFO] evomaster-client-java-util 3.4.1-SNAPSHOT .......... SUCCESS [  0.060 s]
-[INFO] evomaster-client-java-distance-heuristics 3.4.1-SNAPSHOT SUCCESS [  1.274 s]
-[INFO] evomaster-client-java-instrumentation 3.4.1-SNAPSHOT SUCCESS [ 15.596 s]
-[INFO] evomaster-ci-utils 3.4.1-SNAPSHOT .................. SUCCESS [  0.071 s]
-[INFO] evomaster-client-java-sql 3.4.1-SNAPSHOT ........... SUCCESS [ 36.220 s]
-[INFO] evomaster-client-java-controller 3.4.1-SNAPSHOT .... SUCCESS [01:49 min]
-[INFO] WFC 0.0.1-SNAPSHOT ................................. SUCCESS [  2.268 s]
-[INFO] solver 3.4.1-SNAPSHOT .............................. SUCCESS [  4.514 s]
-[INFO] evomaster-core 3.4.1-SNAPSHOT ...................... SUCCESS [15:09 min]
-[INFO] evomaster-e2e-tests 3.4.1-SNAPSHOT ................. SUCCESS [  0.004 s]
-[INFO] evomaster-e2e-tests-utils 3.4.1-SNAPSHOT ........... SUCCESS [  1.568 s]
-[INFO] evomaster-core-driver-it 3.4.1-SNAPSHOT ............ SUCCESS [  1.049 s]
-[INFO] evomaster-core-it 3.4.1-SNAPSHOT ................... SUCCESS [03:14 min]
-[INFO] evomaster-core-graphql-it 3.4.1-SNAPSHOT ........... SUCCESS [  6.398 s]
-[INFO] evomaster-client-java-dependencies 3.4.1-SNAPSHOT .. SUCCESS [  0.018 s]
-[INFO] evomaster-e2e-tests-dropwizard-examples 3.4.1-SNAPSHOT SUCCESS [  2.713 s]
-[INFO] evomaster-e2e-tests-micronaut-latest 3.4.1-SNAPSHOT  SUCCESS [ 27.874 s]
-[INFO] evomaster-e2e-tests-spring-rest-postgres 3.4.1-SNAPSHOT SUCCESS [02:02 min]
-[INFO] evomaster-e2e-tests-spring-rest-openapi-v2 3.4.1-SNAPSHOT SUCCESS [22:57 min]
-[INFO] evomaster-e2e-tests-spring-rest-openapi-v3 3.4.1-SNAPSHOT SUCCESS [07:16 min]
-[INFO] evomaster-e2e-tests-spring-graphql 3.4.1-SNAPSHOT .. SUCCESS [07:45 min]
-[INFO] evomaster-e2e-tests-spring-rest-mysql 3.4.1-SNAPSHOT SUCCESS [06:42 min]
-[INFO] evomaster-e2e-tests-spring-rpc 3.4.1-SNAPSHOT ...... SUCCESS [  0.005 s]
-[INFO] evomaster-e2e-tests-spring-rpc-thrift 3.4.1-SNAPSHOT SUCCESS [09:09 min]
-[INFO] evomaster-e2e-tests-spring-rpc-grpc 3.4.1-SNAPSHOT . SUCCESS [ 42.243 s]
-[INFO] evomaster-e2e-tests-spring-rest-h2-v1 3.4.1-SNAPSHOT SUCCESS [10:52 min]
-[INFO] evomaster-e2e-tests-spring-rest-h2-v2 3.4.1-SNAPSHOT SUCCESS [01:09 min]
-[INFO] evomaster-e2e-tests-spring-rest-h2-z3solver 3.4.1-SNAPSHOT SUCCESS [ 51.817 s]
-[INFO] evomaster-e2e-tests-spring-web 3.4.1-SNAPSHOT ...... SUCCESS [02:16 min]
-[INFO] evomaster-e2e-tests-spring-rest-mongo 3.4.1-SNAPSHOT SUCCESS [19:25 min]
-[INFO] evomaster-e2e-tests-spring-rest-bb 3.4.1-SNAPSHOT .. FAILURE [12:51 min]
-[INFO] evomaster-e2e-tests-spring-graphql-bb 3.4.1-SNAPSHOT SKIPPED    
-[INFO] evomaster-e2e-tests-emb-json 3.4.1-SNAPSHOT ........ SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-multidb 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-project-report 3.4.1-SNAPSHOT ............ SKIPPED
-[INFO] evomaster-test-old-libraries 3.4.1-SNAPSHOT ........ SKIPPED
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  02:06 h
-[INFO] Finished at: 2025-06-29T01:38:35-03:00
-
-
-[INFO] 
-[INFO] Results:
-[INFO]
-[ERROR] Errors: 
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 2: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 3: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieRedirectEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 2: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 3: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authheader.BBAuthEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 2: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 3: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authtoken.BBAuthTokenEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 2: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 3: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.chainedlocation.BBChainedLocationEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 2: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 3: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.coveragequery.BBCoverageQueryEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 2: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 3: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.datapool.BBDataPoolEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 2: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 3: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.defaultvalues.BBDefaultEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 2: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 3: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.exampleobject.BBExampleObjectEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 2: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 3: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.examplevalues.BBExamplesEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 2: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 3: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.inputs.BBInputsEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 2: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 3: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.links.BBLinksEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 2: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 3: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.linksmulti.BBLinksMultiEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 2: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 3: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.primitives.BBPrimitivesEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBPrimitivesEMTest.testBlackBoxOutput:33->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 2: BBPrimitivesEMTest.testBlackBoxOutput:33->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[ERROR]   Run 3: BBPrimitivesEMTest.testBlackBoxOutput:33->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState pip installation failed with status code: 9009
-[INFO]
-[WARNING] Flakes: 
-[WARNING] org.evomaster.e2etests.spring.rest.bb.datapool.BBDataPoolEMTest.testBlackBoxOutput(OutputFormat)[4]
-[ERROR]   Run 1: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:136 » IllegalState Maven tests failed with status code: 1
-[INFO]   Run 2: PASS
-[INFO]
-[INFO]
-[ERROR] Tests run: 106, Failures: 0, Errors: 14, Skipped: 15, Flakes: 1
-
-
-
 Microsoft Windows [Versión 10.0.26100.4349]
 (c) Microsoft Corporation. Todos los derechos reservados.
 
@@ -624,641 +216,9 @@ pip 25.1.1 from C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\sit
 C:\Users\Usuario>npm --version
 10.9.2
 
-C:\Users\Usuario>
-
-
-
-[INFO]
-[ERROR] Errors: 
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM tests failed with status code: 1
-[ERROR]   Run 2: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState requirements installation failed with status code: 120
-[ERROR]   Run 2: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieRedirectEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieRedirectEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authheader.BBAuthEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authheader.BBAuthEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authtoken.BBAuthTokenEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authtoken.BBAuthTokenEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.chainedlocation.BBChainedLocationEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.chainedlocation.BBChainedLocationEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.coveragequery.BBCoverageQueryEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.coveragequery.BBCoverageQueryEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.datapool.BBDataPoolEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.datapool.BBDataPoolEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.defaultvalues.BBDefaultEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.defaultvalues.BBDefaultEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.exampleobject.BBExampleObjectEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.exampleobject.BBExampleObjectEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.examplevalues.BBExamplesEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.examplevalues.BBExamplesEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.inputs.BBInputsEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.inputs.BBInputsEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.links.BBLinksEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.links.BBLinksEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.linksmulti.BBLinksMultiEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.linksmulti.BBLinksMultiEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.primitives.BBPrimitivesEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBPrimitivesEMTest.testBlackBoxOutput:33->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBPrimitivesEMTest.testBlackBoxOutput:33->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBPrimitivesEMTest.testBlackBoxOutput:33->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-
-
-[INFO] evomaster-e2e-tests-spring-web 3.4.1-SNAPSHOT ...... SUCCESS [02:10 min]
-[INFO] evomaster-e2e-tests-spring-rest-mongo 3.4.1-SNAPSHOT SUCCESS [16:40 min]
-[INFO] evomaster-e2e-tests-spring-rest-bb 3.4.1-SNAPSHOT .. FAILURE [12:12 min]
-[INFO] evomaster-e2e-tests-spring-graphql-bb 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-emb-json 3.4.1-SNAPSHOT ........ SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-multidb 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-project-report 3.4.1-SNAPSHOT ............ SKIPPED
-[INFO] evomaster-test-old-libraries 3.4.1-SNAPSHOT ........ SKIPPED
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
 
 
 > mvn test -rf :evomaster-e2e-tests-spring-rest-bb rompe
-
-
-[INFO] evomaster-e2e-tests-spring-graphql-bb 3.4.1-SNAPSHOT SKIPPED  este corre bien
-mvn test -rf :evomaster-e2e-tests-spring-rest-multidb este corre bien
-mvn test -rf :evomaster-project-report este corre bien
-mvn test -rf :evomaster-test-old-libraries este corre bien
-
-
-[INFO] evomaster-e2e-tests-emb-json ....................... FAILURE [02:58 min]
-
-[INFO]
-[ERROR] Failures: 
-[ERROR] org.evomaster.e2etests.emb.json.genome.GenomeNexusExampleEMTest.runEMTest
-[ERROR]   Run 1: GenomeNexusExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$runTestHandlingFlaky$4:233->lambda$runEMTest$0:32->RestTestBase.assertHasAtLeastOne:313 Seed 44. Missing 200 POST /api/json Teal
-REST calls:
-200 GET /v2/api-docs , auth=NoAuth
-204 POST /api/json , auth=NoAuth
-400 POST /api/json , auth=NoAuth
- ==> expected: <true> but was: <false>
-[ERROR]   Run 2: GenomeNexusExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$runTestHandlingFlaky$4:233->lambda$runEMTest$0:32->RestTestBase.assertHasAtLeastOne:313 Seed 44. Missing 200 POST /api/json Teal
-REST calls:
-200 GET /v2/api-docs , auth=NoAuth
-204 POST /api/json , auth=NoAuth
-400 POST /api/json , auth=NoAuth
- ==> expected: <true> but was: <false>
-[ERROR]   Run 3: GenomeNexusExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$runTestHandlingFlaky$4:233->lambda$runEMTest$0:32->RestTestBase.assertHasAtLeastOne:313 Seed 44. Missing 200 POST /api/json Teal
-REST calls:
-200 GET /v2/api-docs , auth=NoAuth
-204 POST /api/json , auth=NoAuth
-400 POST /api/json , auth=NoAuth
- ==> expected: <true> but was: <false>
-[INFO]
-[ERROR] org.evomaster.e2etests.emb.json.gestaohospital.GestaoHospitalExampleEMTest.runEMTest
-[ERROR]   Run 1: GestaoHospitalExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.GestaoHospitalExampleGeneratedEMTest>
-[ERROR]   Run 2: GestaoHospitalExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.GestaoHospitalExampleGeneratedEMTest>
-[ERROR]   Run 3: GestaoHospitalExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.GestaoHospitalExampleGeneratedEMTest>
-[INFO]
-[ERROR] org.evomaster.e2etests.emb.json.language.LanguageServerExampleEMTest.runEMTest
-[ERROR]   Run 1: LanguageServerExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.LanguageServerExampleGeneratedEMTest>
-[ERROR]   Run 2: LanguageServerExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.LanguageServerExampleGeneratedEMTest>
-[ERROR]   Run 3: LanguageServerExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.LanguageServerExampleGeneratedEMTest>
-[INFO]
-[ERROR] org.evomaster.e2etests.emb.json.proxyprint.ProxyPrintExampleEMTest.runEMTest
-[ERROR]   Run 1: ProxyPrintExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.ProxyPrintExampleGeneratedEMTest>
-[ERROR]   Run 2: ProxyPrintExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.ProxyPrintExampleGeneratedEMTest>
-[ERROR]   Run 3: ProxyPrintExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.ProxyPrintExampleGeneratedEMTest>
-[INFO]
-[ERROR] org.evomaster.e2etests.emb.json.tiltaksgjennomforing.TiltaksgjennomforingExampleEMTest.runEMTest
-[ERROR]   Run 1: TiltaksgjennomforingExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.TiltaksgjennomforingExampleGeneratedEMTest>
-[ERROR]   Run 2: TiltaksgjennomforingExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.TiltaksgjennomforingExampleGeneratedEMTest>
-[ERROR]   Run 3: TiltaksgjennomforingExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.TiltaksgjennomforingExampleGeneratedEMTest>
-[INFO]
-[INFO]
-[ERROR] Tests run: 46, Failures: 5, Errors: 0, Skipped: 0
-
-
-
-10.07.2025:
-
-
-[INFO]
-[ERROR] Failures: 
-[ERROR]   WmAuth0EMTest.testRunEM:29->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms 
-[ERROR]   WmJsonMapEMTest.testRunEM:29->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms
-[ERROR]   WmOkHttpEMTest.testRunEM:29->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.urlopen.WmUrlOpenEMTest.testRunEM
-[ERROR]   Run 1: WmUrlOpenEMTest.testRunEM:33->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms
-[ERROR]   Run 2: WmUrlOpenEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->testRunEM$lambda$0:45->RestTestBase.initAndRun:25 Assertion failed
-[INFO]
-[ERROR] Errors: 
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.auth0.WmAuth0EMTest.null
-[ERROR]   Run 1: WmAuth0EMTest.init:-1 » KillSwitch
-[ERROR]   Run 2: WmAuth0EMTest.init:-1 » KillSwitch
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.jsonmap.WmJsonMapEMTest.null
-[ERROR]   Run 1: WmJsonMapEMTest.init:-1 » KillSwitch
-[ERROR]   Run 2: WmJsonMapEMTest.init:-1 » KillSwitch
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.okhttp.WmOkHttpEMTest.null
-[ERROR]   Run 1: WmOkHttpEMTest.init:-1 » KillSwitch
-[ERROR]   Run 2: WmOkHttpEMTest.init:-1 » KillSwitch
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.okhttp3.WMHttpsTest.null
-[ERROR]   Run 1: WMHttpsTest.setup:-1 » FatalStartup java.lang.RuntimeException: java.io.IOException: Failed to bind to /127.0.0.12:8080
-[ERROR]   Run 2: WMHttpsTest.setup:-1 » FatalStartup java.lang.RuntimeException: java.io.IOException: Failed to bind to /127.0.0.12:8080
-[ERROR]   Run 3: WMHttpsTest.setup:-1 » FatalStartup java.lang.RuntimeException: java.io.IOException: Failed to bind to /127.0.0.12:8080
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.urlopen.WmUrlOpenEMTest.null
-[ERROR]   Run 1: WmUrlOpenEMTest>EnterpriseTestBase.lambda$tearDown$0:96 expected: <true> but was: <false>
-[ERROR]   Run 2: WmUrlOpenEMTest.init:-1 » KillSwitch
-[INFO]
-[INFO]
-[ERROR] Tests run: 103, Failures: 4, Errors: 5, Skipped: 22
-[INFO]
-[INFO] ------------------------------------------------------------------------
-[INFO] Reactor Summary:
-[INFO]
-[INFO] EvoMaster 3.4.1-SNAPSHOT ........................... SUCCESS [  0.479 s]
-[INFO] evomaster-dbconstraint 3.4.1-SNAPSHOT .............. SUCCESS [  7.067 s]
-[INFO] evomaster-client-java 3.4.1-SNAPSHOT ............... SUCCESS [  0.486 s]
-[INFO] evomaster-test-utils-java 3.4.1-SNAPSHOT ........... SUCCESS [  2.495 s]
-[INFO] evomaster-test-utils 3.4.1-SNAPSHOT ................ SUCCESS [  0.011 s]
-[INFO] evomaster-test-utils-js 3.4.1-SNAPSHOT ............. SUCCESS [  0.090 s]
-[INFO] evomaster-test-utils-py 3.4.1-SNAPSHOT ............. SUCCESS [  0.077 s]
-[INFO] evomaster-client-java-sql-dto 3.4.1-SNAPSHOT ....... SUCCESS [  1.027 s]
-[INFO] evomaster-client-java-controller-api 3.4.1-SNAPSHOT  SUCCESS [  1.742 s]
-[INFO] evomaster-client-java-instrumentation-shared 3.4.1-SNAPSHOT SUCCESS [  2.252 s]
-[INFO] evomaster-client-java-util 3.4.1-SNAPSHOT .......... SUCCESS [  0.680 s]
-[INFO] evomaster-client-java-distance-heuristics 3.4.1-SNAPSHOT SUCCESS [  1.979 s]
-[INFO] evomaster-client-java-instrumentation 3.4.1-SNAPSHOT SUCCESS [ 20.631 s]
-[INFO] evomaster-ci-utils 3.4.1-SNAPSHOT .................. SUCCESS [  0.113 s]
-[INFO] evomaster-client-java-sql 3.4.1-SNAPSHOT ........... SUCCESS [ 41.078 s]
-[INFO] evomaster-client-java-controller 3.4.1-SNAPSHOT .... SUCCESS [01:59 min]
-[INFO] WFC 0.0.1-SNAPSHOT ................................. SUCCESS [  4.010 s]
-[INFO] solver 3.4.1-SNAPSHOT .............................. SUCCESS [  5.530 s]
-[INFO] evomaster-core 3.4.1-SNAPSHOT ...................... SUCCESS [16:41 min]
-[INFO] evomaster-e2e-tests 3.4.1-SNAPSHOT ................. SUCCESS [  0.015 s]
-[INFO] evomaster-e2e-tests-utils 3.4.1-SNAPSHOT ........... SUCCESS [  1.871 s]
-[INFO] evomaster-core-driver-it 3.4.1-SNAPSHOT ............ SUCCESS [  3.292 s]
-[INFO] evomaster-core-it 3.4.1-SNAPSHOT ................... SUCCESS [03:53 min]
-[INFO] evomaster-core-graphql-it 3.4.1-SNAPSHOT ........... SUCCESS [  7.532 s]
-[INFO] evomaster-client-java-dependencies 3.4.1-SNAPSHOT .. SUCCESS [  0.040 s]
-[INFO] evomaster-e2e-tests-dropwizard-examples 3.4.1-SNAPSHOT SUCCESS [  2.566 s]
-[INFO] evomaster-e2e-tests-micronaut-latest 3.4.1-SNAPSHOT  SUCCESS [ 28.992 s]
-[INFO] evomaster-e2e-tests-spring-rest-postgres 3.4.1-SNAPSHOT SUCCESS [02:24 min]
-[INFO] evomaster-e2e-tests-spring-rest-openapi-v2 3.4.1-SNAPSHOT SUCCESS [25:40 min]
-[INFO] evomaster-e2e-tests-spring-rest-openapi-v3 3.4.1-SNAPSHOT FAILURE [28:55 min]
-[INFO] evomaster-e2e-tests-spring-graphql 3.4.1-SNAPSHOT .. SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-mysql 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rpc 3.4.1-SNAPSHOT ...... SKIPPED
-[INFO] evomaster-e2e-tests-spring-rpc-thrift 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rpc-grpc 3.4.1-SNAPSHOT . SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-h2-v1 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-h2-v2 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-h2-z3solver 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-web 3.4.1-SNAPSHOT ...... SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-mongo 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-bb 3.4.1-SNAPSHOT .. SKIPPED
-[INFO] evomaster-e2e-tests-spring-graphql-bb 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-emb-json 3.4.1-SNAPSHOT ........ SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-multidb 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-project-report 3.4.1-SNAPSHOT ............ SKIPPED
-[INFO] evomaster-test-old-libraries 3.4.1-SNAPSHOT ........ SKIPPED
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:21 h
-[INFO] Finished at: 2025-07-09T23:57:16-03:00
-
-
-
----
-
-
-
-[ERROR] Failures: 
-[ERROR]   WmAuth0EMTest.testRunEM:29->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms 
-[ERROR]   WmJsonMapEMTest.testRunEM:29->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms
-[ERROR]   WmOkHttpEMTest.testRunEM:29->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.urlopen.WmUrlOpenEMTest.testRunEM
-[ERROR]   Run 1: WmUrlOpenEMTest.testRunEM:33->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms
-[ERROR]   Run 2: WmUrlOpenEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->testRunEM$lambda$0:45->RestTestBase.initAndRun:25 Assertion failed
-[INFO]
-[ERROR] Errors: 
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.auth0.WmAuth0EMTest.null
-[ERROR]   Run 1: WmAuth0EMTest.init:-1 » KillSwitch
-[ERROR]   Run 2: WmAuth0EMTest.init:-1 » KillSwitch
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.jsonmap.WmJsonMapEMTest.null
-[ERROR]   Run 1: WmJsonMapEMTest.init:-1 » KillSwitch
-[ERROR]   Run 2: WmJsonMapEMTest.init:-1 » KillSwitch
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.okhttp.WmOkHttpEMTest.null
-[ERROR]   Run 1: WmOkHttpEMTest.init:-1 » KillSwitch
-[ERROR]   Run 2: WmOkHttpEMTest.init:-1 » KillSwitch
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.okhttp3.WMHttpsTest.null
-[ERROR]   Run 1: WMHttpsTest.setup:-1 » FatalStartup java.lang.RuntimeException: java.io.IOException: Failed to bind to /127.0.0.12:8080
-[ERROR]   Run 2: WMHttpsTest.setup:-1 » FatalStartup java.lang.RuntimeException: java.io.IOException: Failed to bind to /127.0.0.12:8080
-[ERROR]   Run 3: WMHttpsTest.setup:-1 » FatalStartup java.lang.RuntimeException: java.io.IOException: Failed to bind to /127.0.0.12:8080
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.urlopen.WmUrlOpenEMTest.null
-[ERROR]   Run 1: WmUrlOpenEMTest>EnterpriseTestBase.lambda$tearDown$0:96 expected: <true> but was: <false>
-[ERROR]   Run 2: WmUrlOpenEMTest.init:-1 » KillSwitch
-[INFO]
-[INFO]
-[ERROR] Tests run: 103, Failures: 4, Errors: 5, Skipped: 22
-[INFO]
-[INFO] ------------------------------------------------------------------------
-[INFO] Reactor Summary:
-[INFO]
-[INFO] EvoMaster 3.4.1-SNAPSHOT ........................... SUCCESS [  0.334 s]
-[INFO] evomaster-dbconstraint 3.4.1-SNAPSHOT .............. SUCCESS [  6.245 s]
-[INFO] evomaster-client-java 3.4.1-SNAPSHOT ............... SUCCESS [  0.337 s]
-[INFO] evomaster-test-utils-java 3.4.1-SNAPSHOT ........... SUCCESS [  2.214 s]
-[INFO] evomaster-test-utils 3.4.1-SNAPSHOT ................ SUCCESS [  0.017 s]
-[INFO] evomaster-test-utils-js 3.4.1-SNAPSHOT ............. SUCCESS [  0.114 s]
-[INFO] evomaster-test-utils-py 3.4.1-SNAPSHOT ............. SUCCESS [  0.113 s]
-[INFO] evomaster-client-java-sql-dto 3.4.1-SNAPSHOT ....... SUCCESS [  0.943 s]
-[INFO] evomaster-client-java-controller-api 3.4.1-SNAPSHOT  SUCCESS [  1.542 s]
-[INFO] evomaster-client-java-instrumentation-shared 3.4.1-SNAPSHOT SUCCESS [  2.091 s]
-[INFO] evomaster-client-java-util 3.4.1-SNAPSHOT .......... SUCCESS [  0.676 s]
-[INFO] evomaster-client-java-distance-heuristics 3.4.1-SNAPSHOT SUCCESS [  1.878 s]
-[INFO] evomaster-client-java-instrumentation 3.4.1-SNAPSHOT SUCCESS [ 16.633 s]
-[INFO] evomaster-ci-utils 3.4.1-SNAPSHOT .................. SUCCESS [  0.148 s]
-[INFO] evomaster-client-java-sql 3.4.1-SNAPSHOT ........... SUCCESS [ 36.397 s]
-[INFO] evomaster-client-java-controller 3.4.1-SNAPSHOT .... SUCCESS [01:48 min]
-[INFO] WFC 0.0.1-SNAPSHOT ................................. SUCCESS [  0.957 s]
-[INFO] solver 3.4.1-SNAPSHOT .............................. SUCCESS [  5.240 s]
-[INFO] evomaster-core 3.4.1-SNAPSHOT ...................... SUCCESS [14:37 min]
-[INFO] evomaster-e2e-tests 3.4.1-SNAPSHOT ................. SUCCESS [  0.019 s]
-[INFO] evomaster-e2e-tests-utils 3.4.1-SNAPSHOT ........... SUCCESS [  1.747 s]
-[INFO] evomaster-core-driver-it 3.4.1-SNAPSHOT ............ SUCCESS [  2.908 s]
-[INFO] evomaster-core-it 3.4.1-SNAPSHOT ................... SUCCESS [03:45 min]
-[INFO] evomaster-core-graphql-it 3.4.1-SNAPSHOT ........... SUCCESS [  7.123 s]
-[INFO] evomaster-client-java-dependencies 3.4.1-SNAPSHOT .. SUCCESS [  0.081 s]
-[INFO] evomaster-e2e-tests-dropwizard-examples 3.4.1-SNAPSHOT SUCCESS [  2.729 s]
-[INFO] evomaster-e2e-tests-micronaut-latest 3.4.1-SNAPSHOT  SUCCESS [ 27.116 s]
-[INFO] evomaster-e2e-tests-spring-rest-postgres 3.4.1-SNAPSHOT SUCCESS [02:10 min]
-[INFO] evomaster-e2e-tests-spring-rest-openapi-v2 3.4.1-SNAPSHOT SUCCESS [22:48 min]
-[INFO] evomaster-e2e-tests-spring-rest-openapi-v3 3.4.1-SNAPSHOT FAILURE [28:58 min]
-[INFO] evomaster-e2e-tests-spring-graphql 3.4.1-SNAPSHOT .. SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-mysql 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rpc 3.4.1-SNAPSHOT ...... SKIPPED
-[INFO] evomaster-e2e-tests-spring-rpc-thrift 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rpc-grpc 3.4.1-SNAPSHOT . SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-h2-v1 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-h2-v2 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-h2-z3solver 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-web 3.4.1-SNAPSHOT ...... SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-mongo 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-bb 3.4.1-SNAPSHOT .. SKIPPED
-[INFO] evomaster-e2e-tests-spring-graphql-bb 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-e2e-tests-emb-json 3.4.1-SNAPSHOT ........ SKIPPED
-[INFO] evomaster-e2e-tests-spring-rest-multidb 3.4.1-SNAPSHOT SKIPPED
-[INFO] evomaster-project-report 3.4.1-SNAPSHOT ............ SKIPPED
-[INFO] evomaster-test-old-libraries 3.4.1-SNAPSHOT ........ SKIPPED
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:16 h
-[INFO] Finished at: 2025-07-12T11:45:42-03:00
-
-
-
-
-
-CUALES SE ROMPEN:
-
-
-[INFO] evomaster-e2e-tests-spring-rest-openapi-v3 3.4.1-SNAPSHOT FAILURE [28:58 min]
-[INFO] evomaster-e2e-tests-spring-rest-bb 3.4.1-SNAPSHOT .. SKIPPED
-[INFO] evomaster-e2e-tests-emb-json 3.4.1-SNAPSHOT ........ SKIPPED
-
-
-
-[INFO] evomaster-e2e-tests-spring-rest-openapi-v3 3.4.1-SNAPSHOT FAILURE [28:58 min]:
-
-[ERROR] Failures: 
-[ERROR]   WmAuth0EMTest.testRunEM:29->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms 
-[ERROR]   WmJsonMapEMTest.testRunEM:29->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms
-[ERROR]   WmOkHttpEMTest.testRunEM:29->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.urlopen.WmUrlOpenEMTest.testRunEM
-[ERROR]   Run 1: WmUrlOpenEMTest.testRunEM:33->EnterpriseTestBase.runTestHandlingFlakyAndCompilation:311->EnterpriseTestBase.runTestHandlingFlaky:195->EnterpriseTestBase.runTestHandlingFlaky:225 execution timed out after 180000 ms
-[ERROR]   Run 2: WmUrlOpenEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$null$4:233->testRunEM$lambda$0:45->RestTestBase.initAndRun:25 Assertion failed
-[INFO]
-[ERROR] Errors: 
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.auth0.WmAuth0EMTest.null
-[ERROR]   Run 1: WmAuth0EMTest.init:-1 » KillSwitch
-[ERROR]   Run 2: WmAuth0EMTest.init:-1 » KillSwitch
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.jsonmap.WmJsonMapEMTest.null
-[ERROR]   Run 1: WmJsonMapEMTest.init:-1 » KillSwitch
-[ERROR]   Run 2: WmJsonMapEMTest.init:-1 » KillSwitch
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.okhttp.WmOkHttpEMTest.null
-[ERROR]   Run 1: WmOkHttpEMTest.init:-1 » KillSwitch
-[ERROR]   Run 2: WmOkHttpEMTest.init:-1 » KillSwitch
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.okhttp3.WMHttpsTest.null
-[ERROR]   Run 1: WMHttpsTest.setup:-1 » FatalStartup java.lang.RuntimeException: java.io.IOException: Failed to bind to /127.0.0.12:8080
-[ERROR]   Run 2: WMHttpsTest.setup:-1 » FatalStartup java.lang.RuntimeException: java.io.IOException: Failed to bind to /127.0.0.12:8080
-[ERROR]   Run 3: WMHttpsTest.setup:-1 » FatalStartup java.lang.RuntimeException: java.io.IOException: Failed to bind to /127.0.0.12:8080
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.openapi.v3.wiremock.urlopen.WmUrlOpenEMTest.null
-[ERROR]   Run 1: WmUrlOpenEMTest>EnterpriseTestBase.lambda$tearDown$0:96 expected: <true> but was: <false>
-[ERROR]   Run 2: WmUrlOpenEMTest.init:-1 » KillSwitch
-[INFO]
-
-
-[INFO] evomaster-e2e-tests-spring-rest-bb 3.4.1-SNAPSHOT .. SKIPPED
-
-[INFO]
-[ERROR] Errors: 
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM tests failed with status code: 1
-[ERROR]   Run 2: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState requirements installation failed with status code: 120
-[ERROR]   Run 2: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieRedirectEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieRedirectEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBAuthCookieRedirectEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authheader.BBAuthEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authheader.BBAuthEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBAuthEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authtoken.BBAuthTokenEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.authtoken.BBAuthTokenEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBAuthTokenEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.chainedlocation.BBChainedLocationEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.chainedlocation.BBChainedLocationEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBChainedLocationEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.coveragequery.BBCoverageQueryEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.coveragequery.BBCoverageQueryEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBCoverageQueryEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.datapool.BBDataPoolEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.datapool.BBDataPoolEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBDataPoolEMTest.testBlackBoxOutput:30->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.defaultvalues.BBDefaultEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.defaultvalues.BBDefaultEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBDefaultEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.exampleobject.BBExampleObjectEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.exampleobject.BBExampleObjectEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBExampleObjectEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.examplevalues.BBExamplesEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.examplevalues.BBExamplesEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBExamplesEMTest.testBlackBoxOutput:28->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.inputs.BBInputsEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.inputs.BBInputsEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBInputsEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.links.BBLinksEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.links.BBLinksEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBLinksEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.linksmulti.BBLinksMultiEMTest.testBlackBoxOutput(OutputFormat)[6]
-[ERROR]   Run 1: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 2: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[ERROR]   Run 3: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM installation failed with status code: 1
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.linksmulti.BBLinksMultiEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBLinksMultiEMTest.testBlackBoxOutput:27->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-[ERROR] org.evomaster.e2etests.spring.rest.bb.primitives.BBPrimitivesEMTest.testBlackBoxOutput(OutputFormat)[7]
-[ERROR]   Run 1: BBPrimitivesEMTest.testBlackBoxOutput:33->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 2: BBPrimitivesEMTest.testBlackBoxOutput:33->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[ERROR]   Run 3: BBPrimitivesEMTest.testBlackBoxOutput:33->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:134 » IllegalState Python tests failed with status code: 120
-[INFO]
-
-
-[INFO] evomaster-e2e-tests-emb-json 3.4.1-SNAPSHOT ........ SKIPPED
-
-
-
-[INFO]
-[ERROR] Failures: 
-[ERROR] org.evomaster.e2etests.emb.json.genome.GenomeNexusExampleEMTest.runEMTest
-[ERROR]   Run 1: GenomeNexusExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$runTestHandlingFlaky$4:233->lambda$runEMTest$0:32->RestTestBase.assertHasAtLeastOne:313 Seed 44. Missing 200 POST /api/json Teal
-REST calls:
-200 GET /v2/api-docs , auth=NoAuth
-204 POST /api/json , auth=NoAuth
-400 POST /api/json , auth=NoAuth
- ==> expected: <true> but was: <false>
-[ERROR]   Run 2: GenomeNexusExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$runTestHandlingFlaky$4:233->lambda$runEMTest$0:32->RestTestBase.assertHasAtLeastOne:313 Seed 44. Missing 200 POST /api/json Teal
-REST calls:
-200 GET /v2/api-docs , auth=NoAuth
-204 POST /api/json , auth=NoAuth
-400 POST /api/json , auth=NoAuth
- ==> expected: <true> but was: <false>
-[ERROR]   Run 3: GenomeNexusExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlaky$5:229->EnterpriseTestBase.handleFlaky:455->EnterpriseTestBase.lambda$runTestHandlingFlaky$4:233->lambda$runEMTest$0:32->RestTestBase.assertHasAtLeastOne:313 Seed 44. Missing 200 POST /api/json Teal
-REST calls:
-200 GET /v2/api-docs , auth=NoAuth
-204 POST /api/json , auth=NoAuth
-400 POST /api/json , auth=NoAuth
- ==> expected: <true> but was: <false>
-[INFO]
-[ERROR] org.evomaster.e2etests.emb.json.gestaohospital.GestaoHospitalExampleEMTest.runEMTest
-[ERROR]   Run 1: GestaoHospitalExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.GestaoHospitalExampleGeneratedEMTest>
-[ERROR]   Run 2: GestaoHospitalExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.GestaoHospitalExampleGeneratedEMTest>
-[ERROR]   Run 3: GestaoHospitalExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.GestaoHospitalExampleGeneratedEMTest>
-[INFO]
-[ERROR] org.evomaster.e2etests.emb.json.language.LanguageServerExampleEMTest.runEMTest
-[ERROR]   Run 1: LanguageServerExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.LanguageServerExampleGeneratedEMTest>
-[ERROR]   Run 2: LanguageServerExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.LanguageServerExampleGeneratedEMTest>
-[ERROR]   Run 3: LanguageServerExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.LanguageServerExampleGeneratedEMTest>
-[INFO]
-[ERROR] org.evomaster.e2etests.emb.json.proxyprint.ProxyPrintExampleEMTest.runEMTest
-[ERROR]   Run 1: ProxyPrintExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.ProxyPrintExampleGeneratedEMTest>
-[ERROR]   Run 2: ProxyPrintExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.ProxyPrintExampleGeneratedEMTest>
-[ERROR]   Run 3: ProxyPrintExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.ProxyPrintExampleGeneratedEMTest>
-[INFO]
-[ERROR] org.evomaster.e2etests.emb.json.tiltaksgjennomforing.TiltaksgjennomforingExampleEMTest.runEMTest
-[ERROR]   Run 1: TiltaksgjennomforingExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.TiltaksgjennomforingExampleGeneratedEMTest>
-[ERROR]   Run 2: TiltaksgjennomforingExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.TiltaksgjennomforingExampleGeneratedEMTest>
-[ERROR]   Run 3: TiltaksgjennomforingExampleEMTest>EnterpriseTestBase.lambda$runTestHandlingFlakyAndCompilation$7:318->EnterpriseTestBase.compileRunAndVerifyTests:328 expected: <null> but was: <class org.foo.TiltaksgjennomforingExampleGeneratedEMTest>
-[INFO]
-[INFO]
-[ERROR] Tests run: 46, Failures: 5, Errors: 0, Skipped: 0
 
 
 
@@ -1512,5 +472,110 @@ PS C:\Users\Usuario\Desktop\EvoMaster-master\EvoMaster-master>
 RestActionBuilderV3
 
 
+O] Results:
+[INFO]
+[ERROR] Failures: 
+[ERROR] org.evomaster.core.output.WriteXMLTest.testChildrenXML
+[ERROR]   Run 1: WriteXMLTest.testChildrenXML:105 expected: <@Test
+public void test() throws Exception {
+    List<InsertionDto> insertions = sql().insertInto("Table0", 0L)
+            .d("xmlColumn", "\"<anElement><child></child><child></child><child></child><child></child></anElement>\"")
+        .dtos();
+    InsertionResultsDto insertionsresult = controller.execInsertionsIntoDatabase(insertions);
+}
+> but was: <@Test
+public void test() throws Exception {
+    List<InsertionDto> insertions = sql().insertInto("Table0", 0L)
+            .d("xmlColumn", "\"<anElement><child><child></child></child><child><child></child></child><child><child></child></child><child><child></child></child></anElement>\"")
+        .dtos();
+    InsertionResultsDto insertionsresult = controller.execInsertionsIntoDatabase(insertions);
+}
+>
+[ERROR]   Run 2: WriteXMLTest.testChildrenXML:105 expected: <@Test
+public void test() throws Exception {
+    List<InsertionDto> insertions = sql().insertInto("Table0", 0L)
+            .d("xmlColumn", "\"<anElement><child></child><child></child><child></child><child></child></anElement>\"")
+        .dtos();
+    InsertionResultsDto insertionsresult = controller.execInsertionsIntoDatabase(insertions);
+}
+> but was: <@Test
+public void test() throws Exception {
+    List<InsertionDto> insertions = sql().insertInto("Table0", 0L)
+            .d("xmlColumn", "\"<anElement><child><child></child></child><child><child></child></child><child><child></child></child><child><child></child></child></anElement>\"")
+        .dtos();
+    InsertionResultsDto insertionsresult = controller.execInsertionsIntoDatabase(insertions);
+}
+>
+[ERROR]   Run 3: WriteXMLTest.testChildrenXML:105 expected: <@Test
+public void test() throws Exception {
+    List<InsertionDto> insertions = sql().insertInto("Table0", 0L)
+            .d("xmlColumn", "\"<anElement><child></child><child></child><child></child><child></child></anElement>\"")
+        .dtos();
+    InsertionResultsDto insertionsresult = controller.execInsertionsIntoDatabase(insertions);
+}
+> but was: <@Test
+public void test() throws Exception {
+    List<InsertionDto> insertions = sql().insertInto("Table0", 0L)
+            .d("xmlColumn", "\"<anElement><child><child></child></child><child><child></child></child><child><child></child></child><child><child></child></child></anElement>\"")
+        .dtos();
+    InsertionResultsDto insertionsresult = controller.execInsertionsIntoDatabase(insertions);
+}
+>
+[INFO]
+[ERROR] org.evomaster.core.output.WriteXMLTest.testString
+[ERROR]   Run 1: WriteXMLTest.testString:148 expected: <@Test
+public void test() throws Exception {
+    List<InsertionDto> insertions = sql().insertInto("Table0", 0L)
+            .d("xmlColumn", "\"<anElement>&lt;/element&gt;</anElement>\"")
+        .dtos();
+    InsertionResultsDto insertionsresult = controller.execInsertionsIntoDatabase(insertions);
+}
+> but was: <@Test
+public void test() throws Exception {
+    List<InsertionDto> insertions = sql().insertInto("Table0", 0L)
+            .d("xmlColumn", "\"<anElement><stringValue>&lt;/element&gt;</stringValue></anElement>\"")
+        .dtos();
+    InsertionResultsDto insertionsresult = controller.execInsertionsIntoDatabase(insertions);
+}
+>
+[ERROR]   Run 2: WriteXMLTest.testString:148 expected: <@Test
+public void test() throws Exception {
+    List<InsertionDto> insertions = sql().insertInto("Table0", 0L)
+            .d("xmlColumn", "\"<anElement>&lt;/element&gt;</anElement>\"")
+        .dtos();
+    InsertionResultsDto insertionsresult = controller.execInsertionsIntoDatabase(insertions);
+}
+> but was: <@Test
+public void test() throws Exception {
+    List<InsertionDto> insertions = sql().insertInto("Table0", 0L)
+            .d("xmlColumn", "\"<anElement><stringValue>&lt;/element&gt;</stringValue></anElement>\"")
+        .dtos();
+    InsertionResultsDto insertionsresult = controller.execInsertionsIntoDatabase(insertions);
+}
+>
+[ERROR]   Run 3: WriteXMLTest.testString:148 expected: <@Test
+public void test() throws Exception {
+    List<InsertionDto> insertions = sql().insertInto("Table0", 0L)
+            .d("xmlColumn", "\"<anElement>&lt;/element&gt;</anElement>\"")
+        .dtos();
+    InsertionResultsDto insertionsresult = controller.execInsertionsIntoDatabase(insertions);
+}
+> but was: <@Test
+public void test() throws Exception {
+    List<InsertionDto> insertions = sql().insertInto("Table0", 0L)
+            .d("xmlColumn", "\"<anElement><stringValue>&lt;/element&gt;</stringValue></anElement>\"")
+        .dtos();
+    InsertionResultsDto insertionsresult = controller.execInsertionsIntoDatabase(insertions);
+}
+>
+[INFO]
+[ERROR] org.evomaster.core.sql.extract.postgres.SqlXMLColumnTest.testBooleanElementInsertion
+[ERROR]   Run 1: SqlXMLColumnTest.testBooleanElementInsertion:126 expected: <<anElement><booleanElement>false</booleanElement>> but was: <<anElement><booleanElement>false</booleanElement></anElement>>
+[ERROR]   Run 2: SqlXMLColumnTest.testBooleanElementInsertion:126 expected: <<anElement><booleanElement>false</booleanElement>> but was: <<anElement><booleanElement>false</booleanElement></anElement>>
+[ERROR]   Run 3: SqlXMLColumnTest.testBooleanElementInsertion:126 expected: <<anElement><booleanElement>false</booleanElement>> but was: <<anElement><booleanElement>false</booleanElement></anElement>>
+[INFO]
+[INFO]
+[ERROR] Tests run: 4499, Failures: 3, Errors: 0, Skipped: 9
+[INFO]
 
 

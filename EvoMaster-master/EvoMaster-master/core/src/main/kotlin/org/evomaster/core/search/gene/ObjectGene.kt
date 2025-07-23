@@ -365,8 +365,7 @@ class ObjectGene(
             includedFields.forEach {
                 //FIXME put back, but then update all broken tests
                 buffer.append(openXml(it.name))
-                buffer.append(it.getValueAsPrintableString
-                    (previousGenes, mode, targetFormat))
+                buffer.append(it.getValueAsPrintableString(previousGenes, mode, targetFormat))
                 buffer.append(closeXml(it.name))
             }
             buffer.append(closeXml(name))
