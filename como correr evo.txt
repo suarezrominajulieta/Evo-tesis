@@ -14,11 +14,13 @@ java -jar evomaster.jar  --blackBox true --bbSwaggerUrl file:///C:/Users/Usuario
 
 para averiguar el openApí: http://localhost:8080/v3/api-docs
 
+Los nombres de los path los generaevomaster en base al .json del openapi del application
+
 
 XML:
 
 
-java -jar evomaster.jar  --blackBox true --bbSwaggerUrl file:///C:/Users/Usuario/Documents/GitHub/Evo-tesis/EvoMaster-master/SchemaXml.json --bbTargetUrl http://localhost:8080 --outputFormat JAVA_JUNIT_5 --outputFolder ./evomaster-tests --maxTime 30s --ratePerMinute 60
+java -jar ./core/target/evomaster.jar  --blackBox true --bbSwaggerUrl file:///C:/Users/Usuario/Documents/GitHub/Evo-tesis/EvoMaster-master/SchemaXml.json --bbTargetUrl http://localhost:8080 --outputFormat JAVA_JUNIT_5 --outputFolder ./evomaster-tests --maxTime 30s --ratePerMinute 60
 
 
 bien ahora investigar porque el body no se crea
@@ -579,6 +581,8 @@ public void test() throws Exception {
 [INFO]
 
 
+----------
+
 [ERROR] Errors: 
 [ERROR] org.evomaster.e2etests.spring.rest.bb.authcookie.BBAuthCookieEMTest.testBlackBoxOutput(OutputFormat)[6]
 [ERROR]   Run 1: BBAuthCookieEMTest.testBlackBoxOutput:26->SpringTestBase.executeAndEvaluateBBTest:88->SpringTestBase.executeAndEvaluateBBTest:108->SpringTestBase.runGeneratedTests:133 » IllegalState NPM tests failed with status code: 1
@@ -741,3 +745,83 @@ public void test() throws Exception {
 [INFO]
 [ERROR] Tests run: 113, Failures: 0, Errors: 29, Skipped: 16, Flakes: 3
 
+
+-------
+
+
+BBAuthCookieEMTest.testBlackBoxOutput
+BBAuthCookieRedirectEMTest.testBlackBoxOutput
+BBAuthEMTest.testBlackBoxOutput
+BBAuthTokenEMTest.testBlackBoxOutput
+BBChainedLocationEMTest.testBlackBoxOutput
+BBCleanUpEMTest.testBlackBoxOutput
+BBCoverageQueryEMTest.testBlackBoxOutput
+BBDataPoolEMTest.testBlackBoxOutput
+BBDefaultEMTest.testBlackBoxOutput
+BBExampleObjectEMTest.testBlackBoxOutput
+BBExamplesEMTest.testBlackBoxOutput
+BBInputsEMTest.testBlackBoxOutput
+BBLinksEMTest.testBlackBoxOutput
+BBLinksMultiEMTest.testBlackBoxOutput
+BBPrimitivesEMTest.testBlackBoxOutput
+BBExamplesEMTest.testBlackBoxOutput
+
+-----
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for EvoMaster 3.4.1-SNAPSHOT:
+[INFO]
+[INFO] EvoMaster .......................................... SUCCESS [  0.463 s]
+[INFO] evomaster-dbconstraint ............................. SUCCESS [  7.050 s]
+[INFO] evomaster-client-java .............................. SUCCESS [  0.505 s]
+[INFO] evomaster-test-utils-java .......................... SUCCESS [  2.568 s]
+[INFO] evomaster-test-utils ............................... SUCCESS [  0.011 s]
+[INFO] evomaster-test-utils-js ............................ SUCCESS [  0.082 s]
+[INFO] evomaster-test-utils-py ............................ SUCCESS [  0.073 s]
+[INFO] evomaster-client-java-sql-dto ...................... SUCCESS [  0.942 s]
+[INFO] evomaster-client-java-controller-api ............... SUCCESS [  1.640 s]
+[INFO] evomaster-client-java-instrumentation-shared ....... SUCCESS [  2.361 s]
+[INFO] evomaster-client-java-util ......................... SUCCESS [  0.646 s]
+[INFO] evomaster-client-java-distance-heuristics .......... SUCCESS [  2.085 s]
+[INFO] evomaster-client-java-instrumentation .............. SUCCESS [ 19.909 s]
+[INFO] evomaster-ci-utils ................................. SUCCESS [  0.116 s]
+[INFO] evomaster-client-java-sql .......................... SUCCESS [ 41.303 s]
+[INFO] evomaster-client-java-controller ................... SUCCESS [01:53 min]
+[INFO] solver ............................................. SUCCESS [  5.542 s]
+[INFO] evomaster-core ..................................... SUCCESS [19:54 min]
+[INFO] evomaster-e2e-tests ................................ SUCCESS [  0.009 s]
+[INFO] evomaster-e2e-tests-utils .......................... SUCCESS [  1.371 s]
+[INFO] evomaster-core-driver-it ........................... SUCCESS [  3.682 s]
+[INFO] evomaster-core-it .................................. SUCCESS [02:08 min]
+[INFO] evomaster-core-graphql-it .......................... SUCCESS [  8.048 s]
+[INFO] evomaster-client-java-dependencies ................. SUCCESS [  0.034 s]
+[INFO] evomaster-e2e-tests-dropwizard-examples ............ SUCCESS [  2.592 s]
+[INFO] evomaster-e2e-tests-micronaut-latest ............... SUCCESS [ 27.267 s]
+[INFO] evomaster-e2e-tests-spring-rest-postgres ........... SUCCESS [01:49 min]
+[INFO] evomaster-e2e-tests-spring-rest-openapi-v2 ......... SUCCESS [31:56 min]
+[INFO] evomaster-e2e-tests-spring-rest-openapi-v3 ......... SUCCESS [15:20 min]
+[INFO] evomaster-e2e-tests-spring-graphql ................. SUCCESS [11:49 min]
+[INFO] evomaster-e2e-tests-spring-rest-mysql .............. SUCCESS [05:35 min]
+[INFO] evomaster-e2e-tests-spring-rpc ..................... SUCCESS [  0.012 s]
+[INFO] evomaster-e2e-tests-spring-rpc-thrift .............. SUCCESS [11:12 min]
+[INFO] evomaster-e2e-tests-spring-rpc-grpc ................ SUCCESS [ 37.605 s]
+[INFO] evomaster-e2e-tests-spring-rest-h2-v1 .............. SUCCESS [14:35 min]
+[INFO] evomaster-e2e-tests-spring-rest-h2-v2 .............. SUCCESS [01:08 min]
+[INFO] evomaster-e2e-tests-spring-rest-h2-z3solver ........ SUCCESS [ 46.644 s]
+[INFO] evomaster-e2e-tests-spring-web ..................... SUCCESS [02:18 min]
+[INFO] evomaster-e2e-tests-spring-rest-mongo .............. SUCCESS [17:53 min]
+[INFO] evomaster-e2e-tests-spring-rest-bb ................. SUCCESS [01:20 min]
+[INFO] evomaster-e2e-tests-spring-graphql-bb .............. SUCCESS [ 51.829 s]
+[INFO] evomaster-e2e-tests-emb-json ....................... SUCCESS [01:54 min]
+[INFO] evomaster-e2e-tests-spring-rest-multidb ............ SUCCESS [02:29 min]
+[INFO] evomaster-e2e-tests-spring-rest-opensearch ......... SUCCESS [01:41 min]
+[INFO] evomaster-e2e-tests-spring-rest-rsa ................ SUCCESS [ 39.323 s]
+[INFO] evomaster-project-report ........................... SUCCESS [  5.217 s]
+[INFO] evomaster-test-old-libraries ....................... SUCCESS [  1.842 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:30 h
+[INFO] Finished at: 2025-07-28T12:08:08-03:00
+[INFO] ------------------------------------------------------------------------
+PS C:\Users\Usuario\Documents\GitHub\Evo-tesis\EvoMaster-master\EvoMaster-master>
