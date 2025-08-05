@@ -361,19 +361,14 @@ class ObjectGene(
                 to decide when fields should be represented with tags or attributes
              */
 
-            val xmlInfo = schema.get("xml") as? Map<String, Any>
-            val xmlRootName = xmlInfo?.get("name") as? String
-            val rootTag = xmlRootName ?: name
-
-
-            buffer.append(openXml(rootTag))
+            buffer.append(openXml(name))
             includedFields.forEach {
                 //FIXME put back, but then update all broken tests
                 buffer.append(openXml(it.name))
                 buffer.append(it.getValueAsPrintableString(previousGenes, mode, targetFormat))
                 buffer.append(closeXml(it.name))
             }
-            buffer.append(closeXml(rootTag))
+            buffer.append(closeXml(name))
 
         } else if (mode == GeneUtils.EscapeMode.X_WWW_FORM_URLENCODED) {
 

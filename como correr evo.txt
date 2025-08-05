@@ -825,3 +825,9 @@ BBExamplesEMTest.testBlackBoxOutput
 [INFO] Finished at: 2025-07-28T12:08:08-03:00
 [INFO] ------------------------------------------------------------------------
 PS C:\Users\Usuario\Documents\GitHub\Evo-tesis\EvoMaster-master\EvoMaster-master>
+
+
+
+--blackBox true --bbSwaggerUrl file:///C:/Users/Usuario/Desktop/EvoMaster-master/openapi.json --bbTargetUrl https://petstore3.swagger.io --outputFormat JAVA_JUNIT_5 --outputFolder ./evomaster-tests --maxTime 30s --ratePerMinute 60
+
+--blackBox true --bbSwaggerUrl file:///C:/Users/Usuario/Documents/GitHub/Evo-tesis/EvoMaster-master/SchemaXml.json --bbTargetUrl http://localhost:8080 --outputFormat JAVA_JUNIT_5 --outputFolder ./evomaster-tests --maxTime 30s --ratePerMinute 60
