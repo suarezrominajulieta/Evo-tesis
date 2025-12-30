@@ -201,3 +201,13 @@ mvn test -pl :evomaster-core -Dtest=ObjectGeneTest -DtrimStackTrace=false
 que puede mutar de un objeto json PAtch?
 
 para que tome un cambio de print, hay que recompilar todo!
+
+
+@XmlRootElement(name = "project")
+@XmlAccessorType(XmlAccessType.FIELD)
+open class Project(
+    @XmlAttribute
+    var code: String = "",
+    @field:XmlElement(name = "employee", namespace = "")
+    var members: List<Member> = mutableListOf()
+)
